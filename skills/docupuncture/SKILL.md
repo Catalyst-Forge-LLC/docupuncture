@@ -5,7 +5,7 @@ description: Precise in-place edits to an existing Google Doc via paste-and-run 
 
 # Docupuncture for Docs
 
-Docupuncture = precise, needle-point edits to live Google Workspace documents with zero damage to the rest of the file. This skill is the **Docs** implementation.
+Docupuncture = insert a change into a live Google Workspace document and leave the rest of the file alone. This skill is the **Docs** implementation.
 
 Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs, instead of regenerating a new document. In-place patching preserves all formatting (fonts, colors, images, tables, comments, theme) that API imports and full regenerations destroy. Use the name "docupuncture" when referring to this workflow with the user.
 

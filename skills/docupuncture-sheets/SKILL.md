@@ -5,7 +5,7 @@ description: Precise in-place edits to an existing Google Sheet via paste-and-ru
 
 # Docupuncture for Sheets
 
-Docupuncture applied to Google Sheets: precise, needle-point edits to a live spreadsheet with zero damage to the rest of the workbook. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs. In-place patching preserves cell formatting, notes, data validation, conditional formatting, charts, and structure that full regenerations destroy.
+Docupuncture applied to Google Sheets: insert a change into a live spreadsheet and leave the rest of the workbook alone. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs. In-place patching preserves cell formatting, notes, data validation, conditional formatting, charts, and structure that full regenerations destroy.
 
 Use the name "docupuncture" (or "docupuncture on this sheet") when referring to this workflow.
 

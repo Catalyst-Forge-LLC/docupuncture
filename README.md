@@ -4,9 +4,9 @@ Precise, zero-damage edits for live Google Workspace documents.
 
 When an AI regenerates a Google Doc, Sheet, or Slides deck, it usually destroys the theme, comments, logos, notes, validation, layout, and history. People who care about their documents hate starting over.
 
-Docupuncture is the practice of making needle-point changes via a small, self-contained Apps Script the user pastes and runs themselves. The needle goes in. Everything else stays exactly as it was.
+Docupuncture is the practice of inserting a change into a live file via a small, self-contained Apps Script the user pastes and runs themselves. The needle goes in. The rest of the document stays.
 
-Written **Docupuncture**. A needle, not a rewrite.
+Written **Docupuncture**. Treat the document. Don't replace it.
 
 ## The skills
 
@@ -47,9 +47,9 @@ Every script is idempotent, fails loudly on missing anchors, and never invents a
 
 ## Why the name
 
-Docupuncture breaks the metallurgy naming theme of the Catalyst Forge shelf (ForgeKit, IngotVault, FilePress) — until you notice that a needle is the most precise metal instrument a forge can produce. Everything else in the shop is a hammer, a vault, a press. This one is small, sharp, and exact.
+The other tools in the shop strike, press, or contain. A needle is still metal from the same fire, but you don't swing it. You place it.
 
-Same fire, finer point.
+Acupuncture treats a living body in situ: insert at a point, leave the rest of the organism alone. Docupuncture does that to a document you already care about.
 
 ## On the Catalyst Forge shelf
 

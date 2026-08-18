@@ -5,7 +5,7 @@ description: Precise in-place edits to an existing Google Slides presentation vi
 
 # Docupuncture for Slides
 
-Docupuncture applied to Google Slides: precise, needle-point text and content edits to a live presentation with zero damage to the rest of the deck. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs. In-place patching preserves theme, layout, speaker notes, and most styling that full regenerations destroy.
+Docupuncture applied to Google Slides: insert a text or content change into a live presentation and leave the rest of the deck alone. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs. In-place patching preserves theme, layout, speaker notes, and most styling that full regenerations destroy.
 
 Use the name "docupuncture" (or "docupuncture on these slides") when referring to this workflow.
 

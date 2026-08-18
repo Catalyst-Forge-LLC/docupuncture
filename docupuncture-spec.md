@@ -2,7 +2,7 @@
 
 **Precise, zero-damage edits for live Google Workspace documents.**
 
-Docupuncture is the practice of making needle-point changes to existing Google Docs, Sheets, and Slides via small, self-contained Apps Scripts that the user pastes and runs themselves. The rest of the document stays completely intact — formatting, comments, theme, notes, data validation, layout, and history are preserved.
+Docupuncture is the practice of inserting a change into an existing Google Doc, Sheet, or Slides file via a small, self-contained Apps Script that the user pastes and runs themselves. The rest of the document stays completely intact — formatting, comments, theme, notes, data validation, layout, and history are preserved.
 
 ---
 
@@ -25,15 +25,15 @@ People who care about their documents hate starting over.
 
 Instead of regenerating the file, Docupuncture generates a focused Apps Script that performs *only* the requested changes using robust text (or value) anchors. The user opens the live file → Extensions → Apps Script → pastes the script → runs it once.
 
-The needle goes in. Everything else stays exactly as it was.
+The needle goes in. The rest of the document stays.
 
 ---
 
 ## The Name
 
-Docupuncture breaks the metallurgy naming theme of the Catalyst Forge shelf (ForgeKit, IngotVault, FilePress) — until you notice that a needle is the most precise metal instrument a forge can produce. Everything else in the shop is a hammer, a vault, a press: tools of force and containment. Docupuncture is the forge's finest output — small, sharp, and exact. Same fire, finer point.
+The other tools in the shop strike, press, or contain. A needle is still metal from the same fire, but you don't swing it. You place it.
 
-That's the unifying theory of the whole collection: small, sharp things from the forge. This one just went to acupuncture school.
+Acupuncture treats a living body in situ: insert at a point, leave the rest of the organism alone. Docupuncture does that to a document you already care about. This one just went to acupuncture school.
 
 ---
 
@@ -53,7 +53,7 @@ That's the unifying theory of the whole collection: small, sharp things from the
 | Skill | Surface | Strengths |
 |-------|---------|-----------|
 | **Docupuncture for Docs** | Google Docs | Best overall fit. Rich document model, comments, tabs, lists, partial styling. |
-| **Docupuncture for Sheets** | Google Sheets | Extremely natural. Grid + ranges make surgical edits easy. Preserves formatting, notes, data validation. |
+| **Docupuncture for Sheets** | Google Sheets | Extremely natural. Grid + ranges are already a map of points. Preserves formatting, notes, data validation. |
 | **Docupuncture for Slides** | Google Slides | Strong for content/text edits. Layout surgery is higher risk and intentionally scoped carefully in v1. |
 
 One brand. Same philosophy. Specialized implementations.
@@ -94,8 +94,8 @@ One brand. Same philosophy. Specialized implementations.
 ### Hero
 
 **Docupuncture**  
-Needle-point edits for Google Workspace.  
-Zero damage to the rest of the document.
+Needles for live Google documents.  
+Zero damage to the rest of the file.
 
 Stop regenerating. Start patching.
 
@@ -123,7 +123,7 @@ Docupuncture delivers a small, self-contained Apps Script that performs *only* t
 
 You paste it into Extensions → Apps Script, run it once, and everything else stays exactly as it was.
 
-Precise. Surgical. Safe.
+Insert the change. Leave the rest.
 
 ---
 
@@ -141,7 +141,7 @@ Precise. Surgical. Safe.
 1. Tell the AI what to change in an existing Google Doc, Sheet, or Slides file.
 2. It reads the live file and generates a clean Apps Script.
 3. You open the file → Extensions → Apps Script → paste → Run.
-4. Done. The needle went in. Everything else is untouched.
+4. Done. The needle went in. The rest of the document stays.
 
 ---
 
@@ -151,7 +151,7 @@ Docupuncture works across Google Workspace.
 Same philosophy. Same zero-damage approach.  
 Specialized needles for **Docs**, **Sheets**, and **Slides**.
 
-Forged in the same shop as the rest of the [Catalyst Forge tools](https://catalystforge.com/open-source) — a needle is still a metal instrument, after all. The sharpest thing to come out of the fire.
+Forged in the same shop as the rest of the [Catalyst Forge tools](https://catalystforge.com/open-source). A needle is still a metal instrument — you just place it instead of swinging it.
 
 ---
 

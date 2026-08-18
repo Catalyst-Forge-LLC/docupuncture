@@ -4,7 +4,7 @@ description: Precise in-place edits to an existing Google Sheet via paste-and-ru
 order: 4
 ---
 
-The Sheets implementation. Extremely natural — a grid plus ranges is already a surgical interface.
+The Sheets implementation. Extremely natural — a grid plus ranges is already a map of points.
 
 Deliver edits as a self-contained Apps Script. Values change. Cell formatting, notes, data validation, conditional formatting, charts, and structure stay.
 

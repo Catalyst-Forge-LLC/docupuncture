@@ -1,17 +1,17 @@
 ---
 title: "A needle from the forge"
 date: 2026-08-18
-description: Why Docupuncture breaks the metallurgy naming theme, and why a needle is still a metal instrument.
+description: Why Docupuncture breaks the metallurgy naming theme — and why you place a needle instead of swinging it.
 tags: [meta]
 ---
 
-Docupuncture breaks the metallurgy naming theme of the Catalyst Forge shelf — ForgeKit, IngotVault, FilePress — until you notice that a needle is the most precise metal instrument a forge can produce.
+The other tools on the Catalyst Forge shelf strike, press, or contain. ForgeKit, IngotVault, FilePress. A needle is still metal from the same fire, but you don't swing it. You place it.
 
-Everything else in the shop is a hammer, a vault, a press: tools of force and containment. Docupuncture is the forge's finest output — small, sharp, and exact. Same fire, finer point.
+Acupuncture treats a living body in situ: insert at a point, leave the rest of the organism alone. You do not recast the patient. Docupuncture does that to a document you already care about.
 
-That's the unifying theory of the whole collection: small, sharp things from the forge. This one just went to acupuncture school.
+When an AI regenerates a Google Doc, Sheet, or deck, it usually destroys the theme, the comments, the logos, the notes, the layout, and the history. People who care about their documents hate starting over. So the agent writes a tiny Apps Script that does only the requested change, using anchors that already exist in the live file. The user pastes it, runs it, and the rest of the document stays.
 
-The product is the same idea in practice. When an AI regenerates a Google Doc, Sheet, or deck, it usually destroys the theme, the comments, the logos, the notes, the layout, and the history. People who care about their documents hate starting over. So the agent writes a tiny Apps Script that does only the requested change, using anchors that already exist in the live file. The user pastes it, runs it, and the rest of the document stays exactly as it was.
+The needle goes in. The body stays.
 
 Three skills. Docs, Sheets, Slides. One brand.
 

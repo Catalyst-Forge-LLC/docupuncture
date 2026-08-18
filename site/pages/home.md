@@ -8,7 +8,7 @@ Stop regenerating. Start patching.
 
 Docupuncture delivers a small, self-contained Apps Script that performs *only* the changes you asked for — right on the live file. You paste it into Extensions → Apps Script, run it once, and everything else stays exactly as it was.
 
-Precise. Surgical. Safe.
+Insert the change. Leave the rest.
 
 <div class="cta-row">
   <a class="cta cta-primary" href="/install">Get the skills</a>
@@ -33,7 +33,7 @@ Instead of regenerating the file, Docupuncture generates a focused Apps Script t
 
 The user opens the live file → Extensions → Apps Script → pastes the script → runs it once.
 
-The needle goes in. Everything else stays exactly as it was.
+The needle goes in. The rest of the document stays.
 
 ## Why it feels different
 
@@ -48,7 +48,7 @@ The needle goes in. Everything else stays exactly as it was.
 2. It reads the live file and generates a clean Apps Script.
 3. You open the file → Extensions → Apps Script → paste → Run.
 4. First run is a dry run. Read the log, flip `DRY_RUN` to `false`, run again.
-5. Done. The needle went in. Everything else is untouched.
+5. Done. The needle went in. The rest of the document stays.
 
 ## One brand, three surfaces
 
@@ -64,7 +64,7 @@ Docupuncture works across Google Workspace. Same philosophy. Same zero-damage ap
 
 ## On the Catalyst Forge shelf
 
-Forged in the same shop as the rest of the [Catalyst Forge tools](https://www.catalystforge.com/open-source) — a needle is still a metal instrument, after all. The sharpest thing to come out of the fire.
+Forged in the same shop as the rest of the [Catalyst Forge tools](https://www.catalystforge.com/open-source). A needle is still a metal instrument — you just place it instead of swinging it.
 
 Closest cousin is [TemperPass](https://temperpass.dev): a rule set you point an agent at.
 

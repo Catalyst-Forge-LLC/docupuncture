@@ -14,7 +14,7 @@ Best overall fit. The Google Docs model is rich — comments, tabs, lists, parti
 
 ## [Sheets](/sheets)
 
-Extremely natural. A grid plus ranges makes surgical edits easy. Values change; formatting, notes, data validation, conditional formatting, and charts stay.
+Extremely natural. A grid plus ranges is already a map of points. Values change; formatting, notes, data validation, conditional formatting, and charts stay.
 
 **Status:** solid v1.
 
