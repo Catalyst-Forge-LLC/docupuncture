@@ -1,12 +1,12 @@
 ---
 title: Treat the document you already have.
-description: In-place edits for live Google Docs, Sheets, and Slides. Insert only the change; theme, comments, and history stay.
+description: Insert precise edits without changing the theme, format, comments, or history.
 order: 0
 ---
 
-You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, comments, logos, notes, and layout are gone.
+You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, format, comments, and history are gone.
 
-Docupuncture writes a small Apps Script that changes only what you asked for, on the live file. You paste it into Extensions → Apps Script and run it. The rest of the document stays.
+Docupuncture writes a small Apps Script you paste into Extensions → Apps Script and run on the live file.
 
 <div class="cta-row">
   <a class="cta cta-primary" href="/install">Get the skills</a>
@@ -35,8 +35,6 @@ The script runs as you, on your file. Missing anchors are logged and skipped. Re
 | [Docs](/docs) | Google Docs | Comments, tabs, lists, partial styling. |
 | [Sheets](/sheets) | Google Sheets | Grid and ranges. Notes and validation stay. |
 | [Slides](/slides) | Google Slides | Text and content. Layout surgery is higher risk. |
-
-The needle goes in. The rest of the document stays.
 
 [Install](/install) · [Skills](/skills) · [GitHub](https://github.com/Catalyst-Forge-LLC/docupuncture)
 

@@ -4,7 +4,7 @@ description: Three skills. Docs, Sheets, and Slides. Same rules on each surface.
 order: 2
 ---
 
-Same rules on every surface: only the intended change lands, the script runs as you, missing anchors are logged, locations are never invented.
+Same rules on every surface: precise edits, the script runs as you, missing anchors are logged, locations are never invented. Theme, format, comments, and history are not rewritten.
 
 ## [Docs](/docs)
 

@@ -6,9 +6,9 @@ const npm = 'https://www.npmjs.com/package/docupuncture';
 export default defineFilepressConfig({
 	title: 'Docupuncture',
 	description:
-		'In-place edits for live Google Docs, Sheets, and Slides. Treat the file you already have; theme, comments, and history stay.',
+		'Insert precise edits without changing the theme, format, comments, or history.',
 	tagline: 'Treat the document you already have.',
-	lede: 'Insert only the change. Theme, comments, and history stay.',
+	lede: 'Insert precise edits without changing the theme, format, comments, or history.',
 	url: 'https://docupuncture.com',
 	author: 'Catalyst Forge LLC',
 	logo: '/logo.svg',

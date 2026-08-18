@@ -9,8 +9,8 @@ The other tools on the Catalyst Forge shelf strike, press, or contain. ForgeKit,
 
 Acupuncture treats a living body in place: insert at a point, leave the rest alone. You do not recast the patient. Docupuncture does that to a document you already care about.
 
-When an AI regenerates a Google Doc, Sheet, or deck, the theme, comments, logos, notes, layout, and history usually go with it. So the agent writes a small Apps Script that does only the requested change, using text that already exists in the file. You paste it, run it, and the rest of the document stays.
+When an AI regenerates a Google Doc, Sheet, or deck, the theme, format, comments, and history usually go with it. So the agent writes a small Apps Script that finds text already in the file and edits there. You paste it and run it.
 
-The needle goes in. The rest of the document stays.
+Insert precise edits without changing the theme, format, comments, or history.
 
 [Get the skills](/install)

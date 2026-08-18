@@ -2,9 +2,9 @@
 
 Treat the document you already have.
 
-Insert a change into an existing Google Doc, Sheet, or Slides file with a small Apps Script the user pastes and runs. Theme, comments, notes, validation, layout, and history stay.
+Insert precise edits without changing the theme, format, comments, or history.
 
-The needle goes in. The rest of the document stays.
+The user pastes a small Apps Script into an existing Google Doc, Sheet, or Slides file and runs it.
 
 Marketing copy lives on the site (`site/pages/`). This file is for implementers.
 

@@ -19,12 +19,12 @@ Point at `aibreze` `rules/core.md`. Do not fork it.
 ## Protected lines
 
 - Treat the document you already have.
-- The needle goes in. The rest of the document stays.
+- Insert precise edits without changing the theme, format, comments, or history.
 
 Do not clever-synonym those.
 
 ## House extras
 
 - Healing, not voodoo. Do not lead a page with the needle.
-- Max **1** needle maxim on a landing page (the protected closer, or none).
+- Max **1** use of the promise sentence on a landing page.
 - Do not duplicate marketing copy into `docupuncture-spec.md`. Spec is for implementers.

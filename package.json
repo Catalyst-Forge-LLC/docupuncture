@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": false,
 	"type": "module",
-	"description": "Precise, zero-damage edits for live Google Workspace documents. Agent skills that patch Docs, Sheets, and Slides in place.",
+	"description": "Insert precise edits without changing the theme, format, comments, or history.",
 	"license": "MIT",
 	"author": "Catalyst Forge LLC",
 	"keywords": [

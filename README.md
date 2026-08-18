@@ -2,7 +2,9 @@
 
 Treat the document you already have.
 
-When an AI regenerates a Google Doc, Sheet, or deck, it usually destroys the theme, comments, logos, notes, layout, and history. Docupuncture writes a small Apps Script you paste and run on the live file. The needle goes in. The rest of the document stays.
+Insert precise edits without changing the theme, format, comments, or history.
+
+When an AI regenerates a Google Doc, Sheet, or deck, those things usually go with it. Docupuncture writes a small Apps Script you paste and run on the live file.
 
 ## The skills
 
