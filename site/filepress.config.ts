@@ -9,7 +9,7 @@ export default defineFilepressConfig({
 		'Insert precise edits without changing the theme, format, comments, or history.',
 	tagline: 'Treat the document you already have.',
 	lede: 'Insert precise edits without changing the theme, format, comments, or history.',
-	url: 'https://docupuncture.com',
+	url: 'https://docupuncture.dev',
 	author: 'Catalyst Forge LLC',
 	logo: '/logo.svg',
 	ogImage: '/logo.svg',

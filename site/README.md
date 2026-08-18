@@ -1,4 +1,4 @@
-# docupuncture.com
+# docupuncture.dev
 
 Public site for [Docupuncture](https://github.com/Catalyst-Forge-LLC/docupuncture), built with
 [FilePress](https://getfilepress.com).
@@ -21,7 +21,7 @@ pnpm ship
 # = pnpm build && wrangler pages deploy build --project-name=docupuncture
 ```
 
-Then attach **docupuncture.com** in the Cloudflare dashboard.
+Then attach **docupuncture.dev** in the Cloudflare dashboard.
 
 ### Git-connected Pages
 

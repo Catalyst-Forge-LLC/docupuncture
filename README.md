@@ -29,7 +29,7 @@ git clone https://github.com/Catalyst-Forge-LLC/docupuncture.git
 # then copy skills/docupuncture-docs/  (or -sheets / -slides)
 ```
 
-Site: [docupuncture.com](https://docupuncture.com)
+Site: [docupuncture.dev](https://docupuncture.dev)
 
 ## How a run works
 
