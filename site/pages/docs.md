@@ -1,28 +1,28 @@
 ---
 title: Docupuncture for Docs
-description: Precise in-place edits to an existing Google Doc via paste-and-run Apps Script.
+description: In-place edits to an existing Google Doc. Paste an Apps Script, run it once.
 order: 3
 ---
 
-The Docs implementation. Best overall fit in the family.
+Use this when the file is a Google Doc you already care about.
 
-Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs, instead of regenerating a new document. In-place patching preserves fonts, colors, images, tables, comments, and theme that API imports and full regenerations destroy.
+The script finds existing text, edits next to it, and copies formatting from the neighboring paragraph or list. Fonts, colors, images, tables, comments, and theme stay unless the edit deletes the exact text a comment is attached to.
 
 Skill file: [`skills/docupuncture/SKILL.md`](https://github.com/Catalyst-Forge-LLC/docupuncture/blob/main/skills/docupuncture/SKILL.md)
 
 ## When to use it
 
-Whenever someone asks for edits, tweaks, or iterations to an existing Google Doc — especially repeated rounds. Skip the offer and go straight to the script if they say "docupuncture."
+Edits, tweaks, or another round on an existing Doc. If someone says "docupuncture," skip the menu and write the script.
 
 ## What the script does
 
-- Locates edit points with `body.findText`, using a unique literal plus a secondary nearby context string when helpful.
-- Escapes every anchor — `findText` treats its pattern as a regex.
+- Finds a unique phrase with `body.findText`, then a nearby backup phrase if needed.
+- Escapes the phrase. `findText` treats it as a regex.
 - Inserts paragraphs and list items by sibling index, then copies formatting.
-- Replaces simple text with `replaceText`; does structural work on the existing element.
-- Checks whether the end state already exists before writing anything.
+- Uses `replaceText` for a simple swap.
+- Skips the edit if the new text is already there.
 
-Apps Script cannot delete tabs or edit comments. Comments in untouched regions stay. An edit that deletes the exact text a comment is anchored to will orphan that comment — the skill flags that when it applies.
+Apps Script cannot delete tabs or edit comments. Comments on untouched text stay.
 
 **Status:** mature v1.
 

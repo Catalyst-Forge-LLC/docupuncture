@@ -8,7 +8,7 @@ export default defineFilepressConfig({
 	description:
 		'In-place edits for live Google Docs, Sheets, and Slides. Treat the file you already have; theme, comments, and history stay.',
 	tagline: 'Treat the document you already have.',
-	lede: 'Stop regenerating. Start patching.',
+	lede: 'Insert only the change. Theme, comments, and history stay.',
 	url: 'https://docupuncture.com',
 	author: 'Catalyst Forge LLC',
 	logo: '/logo.svg',

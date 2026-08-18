@@ -1,45 +1,41 @@
 ---
 title: Skills
-description: One brand. Three surfaces. Specialized needles for Docs, Sheets, and Slides.
+description: Three skills. Docs, Sheets, and Slides. Same rules on each surface.
 order: 2
 ---
 
-Docupuncture is one brand with three implementations. Same principles on every surface: zero collateral damage, user-owned execution, idempotent edits, fail loudly, never invent a location.
+Same rules on every surface: only the intended change lands, the script runs as you, missing anchors are logged, locations are never invented.
 
 ## [Docs](/docs)
 
-Best overall fit. The Google Docs model is rich — comments, tabs, lists, partial styling — and a full regeneration destroys all of it. The Docs skill locates insertion points with unique text anchors, copies sibling formatting, and leaves untouched regions alone.
+Best fit. Comments, tabs, lists, and partial styling survive because the script finds existing text and edits next to it.
 
 **Status:** mature v1.
 
 ## [Sheets](/sheets)
 
-Extremely natural. A grid plus ranges is already a map of points. Values change; formatting, notes, data validation, conditional formatting, and charts stay.
+A grid is already a map of points. Values change. Formatting, notes, validation, and charts stay.
 
 **Status:** solid v1.
 
 ## [Slides](/slides)
 
-Strong for content and text. Theme, layout, and speaker notes survive. Moving or resizing many objects is fragile, so v1 flags layout surgery as higher risk and prefers text needles.
+Good for text on shapes that already exist. Theme and speaker notes survive. Moving or resizing many objects is layout surgery; v1 flags that and prefers text.
 
 **Status:** solid v1, content-focused.
 
-## Shared rules
+## What every script does
 
-Every generated script:
+- Uses the open file (`getActiveDocument()`, `getActiveSpreadsheet()`, or `getActivePresentation()`)
+- Ships `DRY_RUN = true` by default
+- Skips work that is already done
+- Logs missing anchors and continues
+- Ends with a count: applied vs skipped
 
-- is **container-bound** (`getActiveDocument()`, `getActiveSpreadsheet()`, `getActivePresentation()`)
-- ships a **`DRY_RUN` flag, default `true`**
-- is **idempotent** — safe to re-run; never duplicates content
-- **fails loudly** on missing anchors and continues with the rest
-- ends with a `Logger.log` summary (`X applied, Y skipped`)
+## When the change is too big
 
-## Risk guidance
-
-- **Low risk** (a handful of discrete, local changes): pure docupuncture.
-- **Medium risk**: still preferred, but warn about anchor drift if the file is edited between runs.
-- **High risk** (large structural changes, many interdependent pieces, major layout work): sequential smaller scripts, or a full regeneration.
-
-Do not force a single massive script.
+- A handful of local edits: one script.
+- More than that, or the file is still being edited: warn about drifting anchors, or split the work.
+- Large restructuring: several smaller scripts, or regenerate the file.
 
 [Install](/install)

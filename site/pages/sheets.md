@@ -1,27 +1,27 @@
 ---
 title: Docupuncture for Sheets
-description: Precise in-place edits to an existing Google Sheet via paste-and-run Apps Script.
+description: In-place edits to an existing Google Sheet. Paste an Apps Script, run it once.
 order: 4
 ---
 
-The Sheets implementation. Extremely natural — a grid plus ranges is already a map of points.
+Use this when the file is a spreadsheet you already care about. A grid is already a map of points.
 
-Deliver edits as a self-contained Apps Script. Values change. Cell formatting, notes, data validation, conditional formatting, charts, and structure stay.
+Values change. Cell formatting, notes, validation, conditional formatting, charts, and structure stay.
 
 Skill file: [`skills/docupuncture-sheets/SKILL.md`](https://github.com/Catalyst-Forge-LLC/docupuncture/blob/main/skills/docupuncture-sheets/SKILL.md)
 
 ## When to use it
 
-Whenever someone asks for edits, tweaks, or iterations to an existing Google Sheet. Prefer this over generating a new spreadsheet.
+Edits, tweaks, or another round on an existing Sheet. Prefer this over generating a new workbook.
 
 ## What the script does
 
-- Locates rows with `createTextFinder` or stable headers plus relative offsets.
-- Updates values on already-formatted cells so notes and validation stay put.
-- Skips a cell when the desired end state is already there.
-- Never invents row or column numbers when an anchor is missing.
+- Finds a row with `createTextFinder` or a stable header plus an offset.
+- Writes into cells that already have formatting, so notes and validation stay.
+- Skips a cell that already has the new value.
+- Does not invent a row or column number when the find fails.
 
-Complex formula dependencies can still break if the structural change is large. Prefer small, targeted needles.
+A large structural change can still break formulas that depend on layout. Keep the script small.
 
 **Status:** solid v1.
 

@@ -4,72 +4,42 @@ description: In-place edits for live Google Docs, Sheets, and Slides. Insert onl
 order: 0
 ---
 
-Stop regenerating. Start patching.
+You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, comments, logos, notes, and layout are gone.
 
-Docupuncture delivers a small, self-contained Apps Script that performs *only* the changes you asked for — right on the live file. You paste it into Extensions → Apps Script, run it once, and everything else stays exactly as it was.
-
-Insert the change. Leave the rest.
+Docupuncture writes a small Apps Script that changes only what you asked for, on the live file. You paste it into Extensions → Apps Script and run it. The rest of the document stays.
 
 <div class="cta-row">
   <a class="cta cta-primary" href="/install">Get the skills</a>
   <a class="cta cta-secondary" href="/skills">How it works</a>
 </div>
 
-## The problem
+## What you lose when the file is regenerated
 
-You ask an AI to tweak a carefully formatted Google Doc, Sheet, or deck. It hands you a brand-new file.
-
-Gone:
-
-- Your theme and branding
+- Theme and branding
 - Comments and suggestion threads
-- Logos, notes, data validation, and precise layout
+- Logos, notes, data validation, and layout
 
-That's not editing. That's starting over.
+## How a run works
 
-## The solution
+1. Tell the agent what to change in an existing Doc, Sheet, or Slides file.
+2. It reads the live file and writes an Apps Script.
+3. You open the file → Extensions → Apps Script → paste → run `applyEdits`.
+4. First run is a dry run. Read the log, set `DRY_RUN = false`, run again.
 
-Instead of regenerating the file, Docupuncture generates a focused Apps Script that performs only the requested changes using robust text (or value) anchors.
+The script runs as you, on your file. Missing anchors are logged and skipped. Re-running does not duplicate work.
 
-The user opens the live file → Extensions → Apps Script → pastes the script → runs it once.
-
-The needle goes in. The rest of the document stays.
-
-## Why it feels different
-
-- **Preserves everything** — formatting, comments, theme, history, notes, validation, layout.
-- **You stay in control** — the script runs as *you*, on *your* file.
-- **Idempotent and honest** — safe to re-run; missing anchors are logged, never guessed.
-- **Built for iteration** — perfect for repeated back-and-forth with an AI on a real document.
-
-## How it works
-
-1. Tell the AI what to change in an existing Google Doc, Sheet, or Slides file.
-2. It reads the live file and generates a clean Apps Script.
-3. You open the file → Extensions → Apps Script → paste → Run.
-4. First run is a dry run. Read the log, flip `DRY_RUN` to `false`, run again.
-5. Done. The needle went in. The rest of the document stays.
-
-## One brand, three surfaces
-
-Docupuncture works across Google Workspace. Same philosophy. Same zero-damage approach. Specialized needles for **Docs**, **Sheets**, and **Slides**.
+## Docs, Sheets, Slides
 
 | Skill | Surface | Fit |
 | --- | --- | --- |
-| [Docs](/docs) | Google Docs | Best overall. Comments, tabs, lists, partial styling. |
-| [Sheets](/sheets) | Google Sheets | Extremely natural. Grid + ranges. Notes and validation stay. |
-| [Slides](/slides) | Google Slides | Strong for content. Layout surgery is higher risk in v1. |
+| [Docs](/docs) | Google Docs | Comments, tabs, lists, partial styling. |
+| [Sheets](/sheets) | Google Sheets | Grid and ranges. Notes and validation stay. |
+| [Slides](/slides) | Google Slides | Text and content. Layout surgery is higher risk. |
 
-[All three skills](/skills) · [Install](/install) · [GitHub](https://github.com/Catalyst-Forge-LLC/docupuncture)
+The needle goes in. The rest of the document stays.
 
-## On the Catalyst Forge shelf
+[Install](/install) · [Skills](/skills) · [GitHub](https://github.com/Catalyst-Forge-LLC/docupuncture)
 
-Forged in the same shop as the rest of the [Catalyst Forge tools](https://www.catalystforge.com/open-source). A needle is still a metal instrument — you just place it instead of swinging it.
-
-Closest cousin is [TemperPass](https://temperpass.dev): a rule set you point an agent at.
-
-Stop regenerating documents you already love. Start doing precise, zero-damage edits.
-
-**Docupuncture** — because your documents deserve better than a full rewrite.
+On the [Catalyst Forge](https://www.catalystforge.com/open-source) shelf next to [TemperPass](https://temperpass.dev): a rule set you point an agent at.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.
