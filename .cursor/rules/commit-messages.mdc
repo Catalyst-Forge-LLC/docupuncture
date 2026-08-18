@@ -1,0 +1,16 @@
+---
+description: Commit message standards — applied when creating git commits
+alwaysApply: true
+---
+
+# Commit Messages
+
+Base the message on **what is actually staged** (`git diff --staged`). Do not invent scope.
+
+## Format
+
+1. **Subject:** short imperative summary (≈50–72 characters).
+2. **Blank line.**
+3. **Body:** what changed and why, honest to the staged diff. Skip for a one-line typo.
+
+No attribution trailers (`Co-Authored-By`, `Made-with`, etc.) unless the user asks. Use `git commit -m` or `git commit -F`.

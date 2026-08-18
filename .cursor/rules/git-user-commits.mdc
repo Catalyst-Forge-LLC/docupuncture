@@ -1,0 +1,25 @@
+---
+description: Commit after repo changes; the user always pushes and publishes
+alwaysApply: true
+---
+
+# Git commits, pushes, and publish
+
+## Commits
+
+When a request changes this repo, **commit** the paths that belong to that request before wrapping up. The user should not have to ask. Stage only what this request touched.
+
+- If there is nothing to commit, say so and skip.
+- If the user asks to leave the tree dirty, do not commit.
+
+## Push and publish (always the user)
+
+The user **always** pushes and publishes themselves. Do **not**:
+
+- `git push` (any remote, including `-u`)
+- `npm publish` / `pnpm publish`
+- `pnpm ship`, `wrangler pages deploy`, or any other deploy/publish flow
+
+even if a plan or earlier message mentioned those steps. Prepare the work, commit locally, and stop. Mention what is ready for them to push or publish.
+
+Read-only git is always fine: `status`, `diff`, `log`, `show`.
