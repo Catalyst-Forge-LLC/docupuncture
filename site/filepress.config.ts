@@ -6,8 +6,8 @@ const npm = 'https://www.npmjs.com/package/docupuncture';
 export default defineFilepressConfig({
 	title: 'Docupuncture',
 	description:
-		'Needles for live Google documents. Insert only the change; the rest of the file stays intact.',
-	tagline: 'Needles for live Google documents.',
+		'In-place edits for live Google Docs, Sheets, and Slides. Treat the file you already have; theme, comments, and history stay.',
+	tagline: 'Treat the document you already have.',
 	lede: 'Stop regenerating. Start patching.',
 	url: 'https://docupuncture.com',
 	author: 'Catalyst Forge LLC',

@@ -1,6 +1,6 @@
 ---
-title: Needles for live Google documents.
-description: Zero damage to the rest of the document. Stop regenerating. Start patching.
+title: Treat the document you already have.
+description: In-place edits for live Google Docs, Sheets, and Slides. Insert only the change; theme, comments, and history stay.
 order: 0
 ---
 

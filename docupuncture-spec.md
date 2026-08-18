@@ -94,8 +94,8 @@ One brand. Same philosophy. Specialized implementations.
 ### Hero
 
 **Docupuncture**  
-Needles for live Google documents.  
-Zero damage to the rest of the file.
+Treat the document you already have.  
+Insert only the change; theme, comments, and history stay.
 
 Stop regenerating. Start patching.
 
