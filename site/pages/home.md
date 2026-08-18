@@ -1,5 +1,5 @@
 ---
-title: Needle-point edits for Google Workspace.
+title: Needles for live Google documents.
 description: Zero damage to the rest of the document. Stop regenerating. Start patching.
 order: 0
 ---

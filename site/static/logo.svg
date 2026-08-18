@@ -1,19 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Docupuncture">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" role="img" aria-label="Docupuncture">
 	<title>Docupuncture</title>
 	<style>
+		.page { fill: #fffdf8; stroke: #3d4f5c; }
+		.fold { fill: #f3f1ec; stroke: #3d4f5c; }
+		.rule { stroke: #c4bdb0; }
+		.handle { fill: #3d4f5c; }
+		.coil { fill: #5a6e7a; }
 		.shaft { stroke: #16181a; }
-		.eye { stroke: #16181a; fill: none; }
-		.point { fill: #8b2e2e; }
+		.tip { fill: #8b2e2e; }
 		@media (prefers-color-scheme: dark) {
+			.page { fill: #1a1916; stroke: #9eb0bc; }
+			.fold { fill: #121110; stroke: #9eb0bc; }
+			.rule { stroke: #5a5348; }
+			.handle { fill: #c4d0d6; }
+			.coil { fill: #9eb0bc; }
 			.shaft { stroke: #f3efe6; }
-			.eye { stroke: #f3efe6; }
-			.point { fill: #d46a6a; }
+			.tip { fill: #d46a6a; }
 		}
 	</style>
-	<!-- Needle eye -->
-	<ellipse class="eye" cx="32" cy="11" rx="4.5" ry="6" stroke-width="2.25" />
-	<!-- Shaft -->
-	<line class="shaft" x1="32" y1="17" x2="32" y2="50" stroke-width="2.25" stroke-linecap="round" />
-	<!-- Point -->
-	<path class="point" d="M32 61 28.2 49.5h7.6Z" />
+
+	<!-- Document: the body that stays -->
+	<rect class="page" x="18" y="26" width="48" height="46" rx="3" stroke-width="1.6" />
+	<path class="fold" d="M54 26h12v12Z" stroke-width="1.6" stroke-linejoin="round" />
+	<g class="rule" stroke-width="1.35" stroke-linecap="round">
+		<line x1="24" y1="40" x2="58" y2="40" />
+		<line x1="24" y1="47.5" x2="52" y2="47.5" />
+		<line x1="24" y1="55" x2="56" y2="55" />
+		<line x1="24" y1="62.5" x2="48" y2="62.5" />
+	</g>
+
+	<!-- Acupuncture needles: coiled handle, hair-thin shaft, inserted into the page -->
+	<g transform="translate(34 4) rotate(-26)">
+		<rect class="handle" x="-2.15" y="0" width="4.3" height="15.2" rx="1.7" />
+		<g class="coil">
+			<ellipse cx="0" cy="2" rx="2.35" ry="1.05" />
+			<ellipse cx="0" cy="4.3" rx="2.35" ry="1.05" />
+			<ellipse cx="0" cy="6.6" rx="2.35" ry="1.05" />
+			<ellipse cx="0" cy="8.9" rx="2.35" ry="1.05" />
+			<ellipse cx="0" cy="11.2" rx="2.35" ry="1.05" />
+			<ellipse cx="0" cy="13.5" rx="2.35" ry="1.05" />
+		</g>
+		<line class="shaft" x1="0" y1="15.2" x2="0" y2="44" stroke-width="1.15" stroke-linecap="round" />
+		<path class="tip" d="M0 47.2  -0.85 43.4h1.7Z" />
+	</g>
+
+	<g transform="translate(50 10) rotate(16)">
+		<rect class="handle" x="-1.95" y="0" width="3.9" height="13.4" rx="1.55" />
+		<g class="coil">
+			<ellipse cx="0" cy="1.8" rx="2.15" ry="0.95" />
+			<ellipse cx="0" cy="3.9" rx="2.15" ry="0.95" />
+			<ellipse cx="0" cy="6" rx="2.15" ry="0.95" />
+			<ellipse cx="0" cy="8.1" rx="2.15" ry="0.95" />
+			<ellipse cx="0" cy="10.2" rx="2.15" ry="0.95" />
+			<ellipse cx="0" cy="12.2" rx="2.15" ry="0.95" />
+		</g>
+		<line class="shaft" x1="0" y1="13.4" x2="0" y2="40" stroke-width="1.05" stroke-linecap="round" />
+		<path class="tip" d="M0 42.8  -0.75 39.2h1.5Z" />
+	</g>
 </svg>
