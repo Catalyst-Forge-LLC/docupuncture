@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+Public URL is docupuncture.dev. Origin post says ForgeTrail, not ForgeKit.
+
 ## 0.1.0
 
 First public release.
