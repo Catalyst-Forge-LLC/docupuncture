@@ -12,7 +12,7 @@ Docupuncture is Markdown you point an agent at, plus a sample Apps Script. Insta
 pnpm add docupuncture
 ```
 
-The skills land at `node_modules/docupuncture/skills/`. Copy `docupuncture/`, `docupuncture-sheets/`, or `docupuncture-slides/`.
+The skills land at `node_modules/docupuncture/skills/`. Copy `docupuncture-docs/`, `docupuncture-sheets/`, or `docupuncture-slides/`.
 
 ## From the repo
 
@@ -24,7 +24,7 @@ Same folders, under `skills/` at the repo root.
 
 | Skill | Path | When |
 | --- | --- | --- |
-| [Docs](/docs) | `skills/docupuncture/` | An existing Google Doc |
+| [Docs](/docs) | `skills/docupuncture-docs/` | An existing Google Doc |
 | [Sheets](/sheets) | `skills/docupuncture-sheets/` | An existing Google Sheet |
 | [Slides](/slides) | `skills/docupuncture-slides/` | Text on an existing deck |
 

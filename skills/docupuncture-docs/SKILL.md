@@ -1,5 +1,5 @@
 ---
-name: docupuncture
+name: docupuncture-docs
 description: Precise in-place edits to an existing Google Doc via paste-and-run Apps Script. Use when the user wants edits, tweaks, or iterations to a Google Doc (or says "docupuncture") — deliver a self-contained script that patches the live doc while preserving all formatting, instead of regenerating a new document. Prefer this over full regeneration for formatted docs. Part of the Docupuncture family (Docs, Sheets, Slides).
 ---
 

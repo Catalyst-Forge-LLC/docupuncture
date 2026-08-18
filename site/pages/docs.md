@@ -8,7 +8,7 @@ Use this when the file is a Google Doc you already care about.
 
 The script finds existing text, edits next to it, and copies formatting from the neighboring paragraph or list. Fonts, colors, images, tables, comments, and theme stay unless the edit deletes the exact text a comment is attached to.
 
-Skill file: [`skills/docupuncture/SKILL.md`](https://github.com/Catalyst-Forge-LLC/docupuncture/blob/main/skills/docupuncture/SKILL.md)
+Skill file: [`skills/docupuncture-docs/SKILL.md`](https://github.com/Catalyst-Forge-LLC/docupuncture/blob/main/skills/docupuncture-docs/SKILL.md)
 
 ## When to use it
 

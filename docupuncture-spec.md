@@ -52,9 +52,9 @@ Acupuncture treats a living body in place: insert at a point, leave the rest alo
 
 | Skill | Surface | Fit |
 |-------|---------|-----|
-| **Docs** | Google Docs | Comments, tabs, lists, partial styling. |
-| **Sheets** | Google Sheets | Grid and ranges. Notes and validation stay. |
-| **Slides** | Google Slides | Text and content. Layout surgery is higher risk. |
+| **docupuncture-docs** | Google Docs | Comments, tabs, lists, partial styling. |
+| **docupuncture-sheets** | Google Sheets | Grid and ranges. Notes and validation stay. |
+| **docupuncture-slides** | Google Slides | Text and content. Layout surgery is higher risk. |
 
 ---
 

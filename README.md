@@ -12,7 +12,7 @@ Copy a folder into Cursor, Claude Code, or anything else that reads `SKILL.md`. 
 
 | Skill | Surface | Fit |
 | --- | --- | --- |
-| [`docupuncture`](skills/docupuncture/SKILL.md) | Google Docs | Comments, tabs, lists, partial styling. |
+| [`docupuncture-docs`](skills/docupuncture-docs/SKILL.md) | Google Docs | Comments, tabs, lists, partial styling. |
 | [`docupuncture-sheets`](skills/docupuncture-sheets/SKILL.md) | Google Sheets | Grid and ranges. Notes and validation stay. |
 | [`docupuncture-slides`](skills/docupuncture-slides/SKILL.md) | Google Slides | Text and content. Layout surgery is higher risk. |
 
@@ -26,7 +26,7 @@ Copy one folder from `node_modules/docupuncture/skills/` into the agent's skills
 
 ```bash
 git clone https://github.com/Catalyst-Forge-LLC/docupuncture.git
-# then copy skills/docupuncture/  (or -sheets / -slides)
+# then copy skills/docupuncture-docs/  (or -sheets / -slides)
 ```
 
 Site: [docupuncture.com](https://docupuncture.com)
