@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Docupuncture">
+	<title>Docupuncture</title>
+	<style>
+		.shaft { stroke: #16181a; }
+		.eye { stroke: #16181a; fill: none; }
+		.point { fill: #8b2e2e; }
+		@media (prefers-color-scheme: dark) {
+			.shaft { stroke: #f3efe6; }
+			.eye { stroke: #f3efe6; }
+			.point { fill: #d46a6a; }
+		}
+	</style>
+	<!-- Needle eye -->
+	<ellipse class="eye" cx="32" cy="11" rx="4.5" ry="6" stroke-width="2.25" />
+	<!-- Shaft -->
+	<line class="shaft" x1="32" y1="17" x2="32" y2="50" stroke-width="2.25" stroke-linecap="round" />
+	<!-- Point -->
+	<path class="point" d="M32 61 28.2 49.5h7.6Z" />
+</svg>

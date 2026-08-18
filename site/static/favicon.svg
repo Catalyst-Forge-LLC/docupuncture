@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Docupuncture">
+	<title>Docupuncture</title>
+	<style>
+		.shaft { stroke: #16181a; }
+		.eye { stroke: #16181a; fill: none; }
+		.point { fill: #8b2e2e; }
+		@media (prefers-color-scheme: dark) {
+			.shaft { stroke: #f3efe6; }
+			.eye { stroke: #f3efe6; }
+			.point { fill: #d46a6a; }
+		}
+	</style>
+	<ellipse class="eye" cx="16" cy="6.5" rx="2.4" ry="3.2" stroke-width="1.6" />
+	<line class="shaft" x1="16" y1="9.7" x2="16" y2="24.5" stroke-width="1.6" stroke-linecap="round" />
+	<path class="point" d="M16 30.5 13.7 24h4.6Z" />
+</svg>

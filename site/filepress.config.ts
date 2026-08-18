@@ -1,0 +1,30 @@
+import { defineFilepressConfig } from 'getfilepress';
+
+const github = 'https://github.com/Catalyst-Forge-LLC/docupuncture';
+const npm = 'https://www.npmjs.com/package/docupuncture';
+
+export default defineFilepressConfig({
+	title: 'Docupuncture',
+	description:
+		'Needle-point edits for Google Workspace. Zero damage to the rest of the document.',
+	tagline: 'Needle-point edits for Google Workspace.',
+	lede: 'Stop regenerating. Start patching.',
+	url: 'https://docupuncture.com',
+	author: 'Catalyst Forge LLC',
+	logo: '/logo.svg',
+	ogImage: '/logo.svg',
+	homePage: 'home',
+	nav: [
+		{ label: 'Home', href: '/' },
+		{ label: 'Skills', href: '/skills' },
+		{ label: 'Install', href: '/install' },
+		{ label: 'Posts', href: '/writing' },
+		{ label: 'GitHub', href: github, icon: 'github' }
+	],
+	footerLinks: [
+		{ label: 'RSS', href: '/rss.xml' },
+		{ label: 'npm', href: npm },
+		{ label: 'GitHub', href: github, icon: 'github' }
+	],
+	topics: []
+});

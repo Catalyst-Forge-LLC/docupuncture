@@ -1,0 +1,54 @@
+{
+	"name": "docupuncture",
+	"version": "0.1.0",
+	"private": false,
+	"type": "module",
+	"description": "Precise, zero-damage edits for live Google Workspace documents. Agent skills that patch Docs, Sheets, and Slides in place.",
+	"license": "MIT",
+	"author": "Catalyst Forge LLC",
+	"keywords": [
+		"ai",
+		"agents",
+		"skills",
+		"cursor",
+		"claude",
+		"google-docs",
+		"google-sheets",
+		"google-slides",
+		"apps-script"
+	],
+	"homepage": "https://docupuncture.com",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Catalyst-Forge-LLC/docupuncture.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Catalyst-Forge-LLC/docupuncture/issues"
+	},
+	"exports": {
+		"./skills/*": "./skills/*",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"skills",
+		"README.md",
+		"LICENSE"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"site:dev": "pnpm --dir site dev",
+		"site:build": "pnpm --dir site run build",
+		"site:check": "pnpm --dir site check",
+		"site:preview": "pnpm --dir site preview",
+		"ship": "pnpm --dir site run ship"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"packageManager": "pnpm@10.30.1",
+	"pnpm": {
+		"onlyBuiltDependencies": ["esbuild", "getfilepress", "workerd"]
+	}
+}
