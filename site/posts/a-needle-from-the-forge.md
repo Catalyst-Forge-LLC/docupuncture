@@ -5,7 +5,7 @@ description: Why the name is a needle, and why you place it instead of swinging 
 tags: [meta]
 ---
 
-The other tools on the Catalyst Forge shelf strike, press, or contain. ForgeKit, IngotVault, FilePress. A needle is still metal from the same fire, but you don't swing it. You place it.
+The other tools on the Catalyst Forge shelf strike, press, or contain. ForgeTrail, IngotVault, FilePress. A needle is still metal from the same fire, but you don't swing it. You place it.
 
 Acupuncture treats a living body in place: insert at a point, leave the rest alone. You do not recast the patient. Docupuncture does that to a document you already care about.
 
