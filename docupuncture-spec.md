@@ -90,6 +90,8 @@ Acupuncture treats a living body in place: insert at a point, leave the rest alo
 
 ## Status
 
+**v0.1.0** (first public).
+
 - **Docs:** mature v1
 - **Sheets:** solid v1
 - **Slides:** solid v1, content-focused; layout surgery flagged
