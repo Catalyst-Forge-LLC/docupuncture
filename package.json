@@ -1,6 +1,6 @@
 {
 	"name": "docupuncture",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"private": false,
 	"type": "module",
 	"description": "Insert precise edits without changing the theme, format, comments, or history.",
