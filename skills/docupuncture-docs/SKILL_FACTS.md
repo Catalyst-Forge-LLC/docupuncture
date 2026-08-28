@@ -79,3 +79,5 @@ Precise in-place edits to an existing Google Doc via paste-and-run Apps Script
 
 ---
 *Generated with [SkillFacts](https://skillfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/)*
+
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdUrFuGzEM_RVBs8-OO3oLXLRLAgToGASGLNF3gnWkQFKXBkH-vdQBRj106iY9Uo_vPerTL_6w33gMM_iDTxRbbRi1MQx2Eb_xCRYoVIGtfgwayoeo-0E8ghUXYMmEVnrY7rd7Q0SDNjEgRM1L7yk5Akqnf6whTjB82z4YfM2YDIuNhXiQay7F0Nq40tr8whCzgMs41BIiOEhZxSm5gA5-Z9GMo_tJNBZw3ym6JQdXgygMAdPADd1jreJ-Rc5VOzXTAhgwGvunF2rcT35SrXLY7casUztvI827m81htTk8PR1398msMs8ly_SvUL42PqMoN_NPKCcGM71OnMAsHjwSdgoEfSe-GpDnWjIkwy65gBgVzLc-Y1Oi0mkuwGDiLbRXf7PNFrF7Pr44m5JO_fkpEiqg-reNPzdMBdIpsOaL7cPW8mowjAwiXZJCgRmUP_7KStCDDav23m4CJpqhhvE-rPs4tvZD7CGDLS4rrWT_FaplhjFod2hH-PoDAGXqTA
