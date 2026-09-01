@@ -1,6 +1,6 @@
-# aiBreze overlay — Docupuncture
+# Smell Check overlay — Docupuncture
 
-Point at `aibreze` `rules/core.md`. Do not fork it.
+Point at `smellcheck` `rules/core.md`. Do not fork it.
 
 ## Pronouns
 
