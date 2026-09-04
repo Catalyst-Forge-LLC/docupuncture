@@ -1,10 +1,10 @@
-# Docupuncture
+# DocuPuncture
 
 Treat the document you already have.
 
 Insert precise edits without changing the theme, format, comments, or history.
 
-When an AI regenerates a Google Doc, Sheet, or deck, those things usually go with it. Docupuncture writes a small Apps Script you paste and run on the live file.
+When an AI regenerates a Google Doc, Sheet, or deck, those things usually go with it. DocuPuncture writes a small Apps Script you paste and run on the live file.
 
 ## The skills
 
@@ -44,7 +44,7 @@ The script is safe to re-run. Missing anchors are logged. It never invents a loc
 
 The other tools in the shop strike, press, or contain. A needle is still metal from the same fire, but you don't swing it. You place it.
 
-Acupuncture treats a living body in place: insert at a point, leave the rest alone. Docupuncture does that to a document you already care about.
+Acupuncture treats a living body in place: insert at a point, leave the rest alone. DocuPuncture does that to a document you already care about.
 
 Closest cousin on the shelf is [TemperPass](https://temperpass.dev): a rule set you point an agent at.
 

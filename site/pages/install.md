@@ -1,10 +1,10 @@
 ---
 title: Install
-description: Point an agent at a Docupuncture skill. Add the package, then copy a folder.
+description: Point an agent at a DocuPuncture skill. Add the package, then copy a folder.
 order: 1
 ---
 
-Docupuncture is Markdown you point an agent at, plus a sample Apps Script. Install the package, then copy one folder from `skills/` into the agent's skills directory. Cursor wants a named folder that contains `SKILL.md`.
+DocuPuncture is Markdown you point an agent at, plus a sample Apps Script. Install the package, then copy one folder from `skills/` into the agent's skills directory. Cursor wants a named folder that contains `SKILL.md`.
 
 ## From npm
 
@@ -28,7 +28,7 @@ Same folders, under `skills/` at the repo root.
 | [Sheets](/sheets) | `skills/docupuncture-sheets/` | An existing Google Sheet |
 | [Slides](/slides) | `skills/docupuncture-slides/` | Text on an existing deck |
 
-If you say **docupuncture**, the agent writes the script. Otherwise it should offer the patch, a new file, or a checklist.
+If you say **DocuPuncture**, the agent writes the script. Otherwise it should offer the patch, a new file, or a checklist.
 
 ## After you install
 

@@ -1,10 +1,10 @@
-# Smell Check overlay — Docupuncture
+# Smell Check overlay — DocuPuncture
 
 Point at `smellcheck` `rules/core.md`. Do not fork it.
 
 ## Pronouns
 
-- Site, README, install: **you** (the person with the file). The product is **Docupuncture**.
+- Site, README, install: **you** (the person with the file). The product is **DocuPuncture** (camel, like FilePress).
 - No corporate we. "Built by Catalyst Forge LLC" is the byline, not a we-voice.
 - Skills (`SKILL.md`) stay instructional (the agent / the user).
 

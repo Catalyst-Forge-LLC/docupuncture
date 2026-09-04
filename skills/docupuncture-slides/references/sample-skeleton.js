@@ -1,5 +1,5 @@
 /**
- * Docupuncture for Slides – sample skeleton
+ * DocuPuncture for Slides – sample skeleton
  *
  * Paste into the target presentation's Extensions → Apps Script, then run
  * applyEdits. With DRY_RUN = true it only logs what it WOULD change;

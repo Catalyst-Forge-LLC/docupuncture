@@ -6,7 +6,7 @@ order: 0
 
 You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, format, comments, and history are gone.
 
-Docupuncture writes a small Apps Script you paste into Extensions → Apps Script and run on the live file.
+DocuPuncture writes a small Apps Script you paste into Extensions → Apps Script and run on the live file.
 
 <div class="cta-row">
   <a class="cta cta-primary" href="/install">Get the skills</a>

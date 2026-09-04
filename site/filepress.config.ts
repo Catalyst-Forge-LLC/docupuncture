@@ -4,7 +4,7 @@ const github = 'https://github.com/Catalyst-Forge-LLC/docupuncture';
 const npm = 'https://www.npmjs.com/package/docupuncture';
 
 export default defineFilepressConfig({
-	title: 'Docupuncture',
+	title: 'DocuPuncture',
 	description:
 		'Insert precise edits without changing the theme, format, comments, or history.',
 	tagline: 'Treat the document you already have.',

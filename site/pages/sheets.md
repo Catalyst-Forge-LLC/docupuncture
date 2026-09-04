@@ -1,5 +1,5 @@
 ---
-title: Docupuncture for Sheets
+title: DocuPuncture for Sheets
 description: In-place edits to an existing Google Sheet. Paste an Apps Script, run it once.
 order: 4
 ---

@@ -1,32 +1,32 @@
 ---
 name: docupuncture-docs
-description: Precise in-place edits to an existing Google Doc via paste-and-run Apps Script. Use when the user wants edits, tweaks, or iterations to a Google Doc (or says "docupuncture") — deliver a self-contained script that patches the live doc while preserving all formatting, instead of regenerating a new document. Prefer this over full regeneration for formatted docs. Part of the Docupuncture family (Docs, Sheets, Slides).
+description: Precise in-place edits to an existing Google Doc via paste-and-run Apps Script. Use when the user wants edits, tweaks, or iterations to a Google Doc (or says "DocuPuncture") — deliver a self-contained script that patches the live doc while preserving all formatting, instead of regenerating a new document. Prefer this over full regeneration for formatted docs. Part of the DocuPuncture family (Docs, Sheets, Slides).
 ---
 
-# Docupuncture for Docs
+# DocuPuncture for Docs
 
-Docupuncture = insert precise edits without changing the theme, format, comments, or history. This skill is the **Docs** implementation.
+DocuPuncture = insert precise edits without changing the theme, format, comments, or history. This skill is the **Docs** implementation.
 
-Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs, instead of regenerating a new document. In-place patching preserves all formatting (fonts, colors, images, tables, comments, theme) that API imports and full regenerations destroy. Use the name "docupuncture" when referring to this workflow with the user.
+Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs, instead of regenerating a new document. In-place patching preserves all formatting (fonts, colors, images, tables, comments, theme) that API imports and full regenerations destroy. Use the name "DocuPuncture" when referring to this workflow with the user.
 
 
 ## When to offer
 
 Whenever the user asks for edits, tweaks, or iterations to an existing Google Doc — especially repeated iteration rounds — use AskUserQuestion to offer:
 
-1. **Docupuncture: Apps Script patch** (recommended for formatted docs) — I generate a script; you run it once. Formatting preserved. First run requires a one-time authorization prompt.
+1. **DocuPuncture: Apps Script patch** (recommended for formatted docs) — I generate a script; you run it once. Formatting preserved. First run requires a one-time authorization prompt.
 2. **New generated doc** — full regeneration (warn: loses theme/logo/comments).
 3. **Manual edit checklist** — exact paste-ready text.
 
-Skip the question and go straight to the script if the user says "docupuncture" or has already established this preference in the conversation.
+Skip the question and go straight to the script if the user says "DocuPuncture" or has already established this preference in the conversation.
 
 ### Edit volume / risk guidance
 
 Before generating the script, quickly assess the size and nature of the requested changes:
 
-- **Low risk** (1–5 discrete edits, mostly text swaps or simple inserts/deletes): proceed with pure docupuncture.
-- **Medium risk** (6–10 edits or light structural work): still prefer docupuncture, but warn the user that a fresh re-read of the doc is required if they make manual changes between runs, and consider splitting into two smaller scripts if the anchors feel fragile.
-- **High risk** (>10 discrete edits, major restructuring, multi-section moves, or many interdependent changes): strongly recommend breaking into multiple sequential docupuncture rounds, or switching to a full regeneration / hybrid approach. Do not force a single massive script.
+- **Low risk** (1–5 discrete edits, mostly text swaps or simple inserts/deletes): proceed with pure DocuPuncture.
+- **Medium risk** (6–10 edits or light structural work): still prefer DocuPuncture, but warn the user that a fresh re-read of the doc is required if they make manual changes between runs, and consider splitting into two smaller scripts if the anchors feel fragile.
+- **High risk** (>10 discrete edits, major restructuring, multi-section moves, or many interdependent changes): strongly recommend breaking into multiple sequential DocuPuncture rounds, or switching to a full regeneration / hybrid approach. Do not force a single massive script.
 
 If the set of changes is high-risk, surface this explicitly to the user before writing the script.
 

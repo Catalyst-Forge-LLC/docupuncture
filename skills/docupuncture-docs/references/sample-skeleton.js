@@ -1,5 +1,5 @@
 /**
- * Docupuncture script skeleton (Docs)
+ * DocuPuncture script skeleton (Docs)
  *
  * Usage:
  * 1. Open the target Google Doc → Extensions → Apps Script

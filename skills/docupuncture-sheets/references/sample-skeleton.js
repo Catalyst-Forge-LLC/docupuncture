@@ -1,5 +1,5 @@
 /**
- * Docupuncture for Sheets – sample skeleton
+ * DocuPuncture for Sheets – sample skeleton
  *
  * Paste into the target spreadsheet's Extensions → Apps Script, then run
  * applyEdits. With DRY_RUN = true it only logs what it WOULD change;

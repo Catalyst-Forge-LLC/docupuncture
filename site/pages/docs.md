@@ -1,5 +1,5 @@
 ---
-title: Docupuncture for Docs
+title: DocuPuncture for Docs
 description: In-place edits to an existing Google Doc. Paste an Apps Script, run it once.
 order: 3
 ---
@@ -12,7 +12,7 @@ Skill file: [`skills/docupuncture-docs/SKILL.md`](https://github.com/Catalyst-Fo
 
 ## When to use it
 
-Edits, tweaks, or another round on an existing Doc. If someone says "docupuncture," skip the menu and write the script.
+Edits, tweaks, or another round on an existing Doc. If someone says "DocuPuncture," skip the menu and write the script.
 
 ## What the script does
 

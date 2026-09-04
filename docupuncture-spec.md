@@ -1,4 +1,4 @@
-# Docupuncture
+# DocuPuncture
 
 Treat the document you already have.
 
@@ -33,7 +33,7 @@ The agent reads the live file, confirms the edits, and writes a container-bound 
 
 The other tools in the shop strike, press, or contain. A needle is still metal from the same fire, but you don't swing it. You place it.
 
-Acupuncture treats a living body in place: insert at a point, leave the rest alone. Docupuncture does that to a document you already care about.
+Acupuncture treats a living body in place: insert at a point, leave the rest alone. DocuPuncture does that to a document you already care about.
 
 ---
 

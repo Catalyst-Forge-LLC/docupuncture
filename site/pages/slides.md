@@ -1,5 +1,5 @@
 ---
-title: Docupuncture for Slides
+title: DocuPuncture for Slides
 description: In-place text edits to an existing Google Slides deck. Paste an Apps Script, run it once.
 order: 5
 ---

@@ -1,27 +1,27 @@
 ---
 name: docupuncture-sheets
-description: Precise in-place edits to an existing Google Sheet via paste-and-run Apps Script. Use when the user wants edits, tweaks, or iterations to a Google Sheet (or says "docupuncture" in a sheets context) — deliver a self-contained script that patches the live spreadsheet while preserving formatting, notes, data validation, and structure, instead of regenerating a new sheet.
+description: Precise in-place edits to an existing Google Sheet via paste-and-run Apps Script. Use when the user wants edits, tweaks, or iterations to a Google Sheet (or says "DocuPuncture" in a sheets context) — deliver a self-contained script that patches the live spreadsheet while preserving formatting, notes, data validation, and structure, instead of regenerating a new sheet.
 ---
 
-# Docupuncture for Sheets
+# DocuPuncture for Sheets
 
-Docupuncture applied to Google Sheets: insert precise edits without changing the theme, format, comments, or history. Notes, data validation, charts, and structure stay too. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs.
+DocuPuncture applied to Google Sheets: insert precise edits without changing the theme, format, comments, or history. Notes, data validation, charts, and structure stay too. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs.
 
-Use the name "docupuncture" (or "docupuncture on this sheet") when referring to this workflow.
+Use the name "DocuPuncture" (or "DocuPuncture on this sheet") when referring to this workflow.
 
 ## When to offer
 
 Whenever the user asks for edits, tweaks, or iterations to an existing Google Sheet — especially repeated rounds — offer:
 
-1. **Docupuncture: Apps Script patch** (recommended) — I generate a script; you run it once. Formatting, notes, and validation preserved.
+1. **DocuPuncture: Apps Script patch** (recommended) — I generate a script; you run it once. Formatting, notes, and validation preserved.
 2. **New generated sheet** — full regeneration (warn: loses most formatting, notes, validation, charts).
 3. **Manual edit checklist** — exact values/ranges to change.
 
-Skip the question if the user already said "docupuncture" or established the preference.
+Skip the question if the user already said "DocuPuncture" or established the preference.
 
 ### Edit volume / risk guidance
 
-- **Low risk** (1–6 discrete cell/range updates): pure docupuncture.
+- **Low risk** (1–6 discrete cell/range updates): pure DocuPuncture.
 - **Medium risk** (7–12 updates or light structural work such as inserting a few rows): still preferred, but warn about anchor drift.
 - **High risk** (large structural changes, many interdependent formulas, or wholesale table rewrites): recommend sequential smaller scripts or full regeneration.
 

@@ -1,27 +1,27 @@
 ---
 name: docupuncture-slides
-description: Precise in-place edits to an existing Google Slides presentation via paste-and-run Apps Script. Use when the user wants edits, tweaks, or iterations to a Google Slides deck (or says "docupuncture" in a slides context) — deliver a self-contained script that patches the live presentation while preserving layout, styles, and structure, instead of regenerating a new deck.
+description: Precise in-place edits to an existing Google Slides presentation via paste-and-run Apps Script. Use when the user wants edits, tweaks, or iterations to a Google Slides deck (or says "DocuPuncture" in a slides context) — deliver a self-contained script that patches the live presentation while preserving layout, styles, and structure, instead of regenerating a new deck.
 ---
 
-# Docupuncture for Slides
+# DocuPuncture for Slides
 
-Docupuncture applied to Google Slides: insert precise edits without changing the theme, format, comments, or history. Layout and speaker notes stay too. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs.
+DocuPuncture applied to Google Slides: insert precise edits without changing the theme, format, comments, or history. Layout and speaker notes stay too. Deliver edits as a self-contained Apps Script the user pastes into Extensions → Apps Script and runs.
 
-Use the name "docupuncture" (or "docupuncture on these slides") when referring to this workflow.
+Use the name "DocuPuncture" (or "DocuPuncture on these slides") when referring to this workflow.
 
 ## When to offer
 
 Whenever the user asks for edits, tweaks, or iterations to an existing Google Slides presentation — especially repeated rounds — offer:
 
-1. **Docupuncture: Apps Script patch** (recommended for content/text changes) — I generate a script; you run it once. Layout and theme preserved.
+1. **DocuPuncture: Apps Script patch** (recommended for content/text changes) — I generate a script; you run it once. Layout and theme preserved.
 2. **New generated deck** — full regeneration (warn: loses theme, precise positioning, speaker notes, etc.).
 3. **Manual edit checklist** — exact text or slide-by-slide changes.
 
-Skip the question if the user already said "docupuncture" or established the preference.
+Skip the question if the user already said "DocuPuncture" or established the preference.
 
 ### Edit volume / risk guidance
 
-- **Low risk** (1–6 text replacements or simple content updates on existing shapes): pure docupuncture.
+- **Low risk** (1–6 text replacements or simple content updates on existing shapes): pure DocuPuncture.
 - **Medium risk** (7–12 changes or light additions of text boxes): still preferred.
 - **High risk** (major layout restructuring, many new slides, complex object insertion/repositioning): recommend sequential smaller scripts or full regeneration. Positioning is fragile.
 

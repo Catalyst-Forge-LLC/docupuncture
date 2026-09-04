@@ -1,6 +1,6 @@
 # docupuncture.dev
 
-Public site for [Docupuncture](https://github.com/Catalyst-Forge-LLC/docupuncture), built with
+Public site for [DocuPuncture](https://github.com/Catalyst-Forge-LLC/docupuncture), built with
 [FilePress](https://getfilepress.com).
 
 ```bash
