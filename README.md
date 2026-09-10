@@ -2,9 +2,9 @@
 
 Treat the document you already have.
 
-Insert precise edits without changing the theme, format, comments, or history.
+Make targeted edits in an existing Google Doc, Sheet, or Slides file using a reviewable Apps Script. DocuPuncture starts with a dry run and is designed to preserve surrounding structure for supported edit types.
 
-When an AI regenerates a Google Doc, Sheet, or deck, those things usually go with it. DocuPuncture writes a small Apps Script you paste and run on the live file.
+When an AI regenerates a Google Doc, Sheet, or deck, theme, format, comments, and the existing revision thread usually go with it. DocuPuncture writes a small Apps Script you paste and run on the live file.
 
 ## The skills
 
@@ -13,7 +13,7 @@ Copy a folder into Cursor, Claude Code, or anything else that reads `SKILL.md`. 
 | Skill | Surface | Fit |
 | --- | --- | --- |
 | [`docupuncture-docs`](skills/docupuncture-docs/SKILL.md) | Google Docs | Comments, tabs, lists, partial styling. |
-| [`docupuncture-sheets`](skills/docupuncture-sheets/SKILL.md) | Google Sheets | Grid and ranges. Notes and validation stay. |
+| [`docupuncture-sheets`](skills/docupuncture-sheets/SKILL.md) | Google Sheets | Grid and ranges. Notes and validation stay on cells you do not rewrite. |
 | [`docupuncture-slides`](skills/docupuncture-slides/SKILL.md) | Google Slides | Text and content. Layout surgery is higher risk. |
 
 ## Install
@@ -33,12 +33,13 @@ Site: [docupuncture.dev](https://docupuncture.dev)
 
 ## How a run works
 
-1. The agent reads the live file and confirms the edits.
-2. It writes an Apps Script.
-3. You open the file → Extensions → Apps Script → paste → run `applyEdits`.
-4. First run is a dry run (`DRY_RUN = true`). Read the log, flip the flag, run again.
+1. Name the target file (URL or ID) and the intended changes.
+2. Give the agent exact current text for anchors, or let a host Drive connector read the file if you already have one. The skill does not grant Google access.
+3. Review the Apps Script it writes.
+4. Open the file → Extensions → Apps Script → paste → run `applyEdits`.
+5. First run is a dry run (`DRY_RUN = true`). Read the log, flip the flag, then run again.
 
-The script is safe to re-run. Missing anchors are logged. It never invents a location.
+The script runs as you. Missing or ambiguous anchors are logged. It never invents a location. For the showcased insert and update operations, a repeat run skips work that is already there.
 
 ## Why the name
 

@@ -4,7 +4,7 @@ description: Point an agent at a DocuPuncture skill. Add the package, then copy 
 order: 1
 ---
 
-DocuPuncture is Markdown you point an agent at, plus a sample Apps Script. Install the package, then copy one folder from `skills/` into the agent's skills directory. Cursor wants a named folder that contains `SKILL.md`.
+DocuPuncture is Markdown you point an agent at, plus a sample Apps Script. Install the package, then copy one folder from `skills/` into the agent's skills directory. Cursor wants a named folder that contains `SKILL.md`. The skill does not grant Google access. It does not open your files.
 
 ## From npm
 
@@ -32,11 +32,12 @@ If you say **DocuPuncture**, the agent writes the script. Otherwise it should of
 
 ## After you install
 
-1. Ask for changes to a live Workspace file.
-2. The agent reads the file and writes an Apps Script.
-3. Open the file → Extensions → Apps Script → paste → run `applyEdits`.
-4. First run is a dry run. Read the log, set `DRY_RUN = false`, run again.
+1. Name the target file (URL or ID) and the intended changes.
+2. Give the agent exact current text for anchors, or let a host Drive connector read the file if you already have one.
+3. Review the Apps Script before you paste it.
+4. Open the file → Extensions → Apps Script → paste → run `applyEdits`.
+5. First run is a dry run. Read the log. If it matches the intended changes, set `DRY_RUN = false`, then run again.
 
-The script runs as you, on your file. The first run shows Google's authorization screen.
+The script runs as you, on your file. The first run shows Google's authorization screen. Do not enable writes until the dry-run log is right.
 
 [The three skills](/skills)

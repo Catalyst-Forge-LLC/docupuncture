@@ -1,9 +1,15 @@
 /**
  * DocuPuncture for Sheets – sample skeleton
  *
+ * Protocol for this sample:
+ * - DRY_RUN = true locates anchors and logs. It must not mutate.
+ * - A missing or ambiguous targeted anchor is logged and skipped. Do not guess.
+ * - Repeat-run for edit_UpdateStatusColumn: skip when column E is already
+ *   Completed. That skip is for this cell update, not every script.
+ *
  * Paste into the target spreadsheet's Extensions → Apps Script, then run
- * applyEdits. With DRY_RUN = true it only logs what it WOULD change;
- * read the log, set DRY_RUN = false, and run again to apply.
+ * applyEdits. With DRY_RUN = true it only logs what it WOULD change.
+ * Read the log, set DRY_RUN = false, and run again to apply.
  */
 
 const DRY_RUN = true; // ← set to false to actually apply the edits
@@ -23,8 +29,8 @@ function applyEdits() {
 }
 
 /**
- * Example: find a row by unique key and update a specific column.
- * Returns true if applied (or would apply in dry run), false if skipped.
+ * Showcased update: find a unique key and set its status cell.
+ * Repeat-run: skip when that status cell is already Completed.
  */
 function edit_UpdateStatusColumn(sheet) {
   const EDIT_NAME = 'UpdateStatusColumn';
@@ -38,11 +44,15 @@ function edit_UpdateStatusColumn(sheet) {
     Logger.log(`✗ SKIPPED: ${EDIT_NAME} — anchor not found`);
     return false;
   }
+  if (finder.findNext()) {
+    Logger.log(`✗ SKIPPED: ${EDIT_NAME} — anchor is ambiguous`);
+    return false;
+  }
 
   const row = cell.getRow();
   const statusCell = sheet.getRange(row, 5); // column E for status, adjust as needed
 
-  // 2. Idempotency: skip if already correct
+  // 2. Repeat-run for this update: skip if already correct
   if (statusCell.getValue() === 'Completed') {
     Logger.log(`✓ SKIPPED (already present): ${EDIT_NAME}`);
     return false;
@@ -54,7 +64,7 @@ function edit_UpdateStatusColumn(sheet) {
     return true;
   }
 
-  // 4. Apply the change (formatting, notes, and validation on the cell stay intact)
+  // 4. Apply the change (formatting, notes, and validation on this cell stay)
   statusCell.setValue('Completed');
   Logger.log(`✓ APPLIED: ${EDIT_NAME} (row ${row})`);
   return true;

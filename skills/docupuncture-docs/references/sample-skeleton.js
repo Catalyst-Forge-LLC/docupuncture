@@ -1,12 +1,18 @@
 /**
  * DocuPuncture script skeleton (Docs)
  *
+ * Protocol for this sample:
+ * - DRY_RUN = true locates anchors and logs. It must not mutate.
+ * - A missing or ambiguous targeted anchor is logged and skipped. Do not guess.
+ * - Repeat-run for edit_AddIntroParagraph: skip when the new paragraph
+ *   text is already present. That skip is for this insert, not every script.
+ *
  * Usage:
  * 1. Open the target Google Doc → Extensions → Apps Script
  * 2. Replace all code with this script
  * 3. Click Run ▶ on applyEdits — with DRY_RUN = true it only logs what it
  *    WOULD change, without touching the document
- * 4. Read the Execution log; if it looks right, set DRY_RUN = false and run again
+ * 4. Read the Execution log. If it looks right, set DRY_RUN = false and run again
  * 5. Authorize on first run
  *
  * Each edit lives in its own named function so the log is human-readable
@@ -34,29 +40,22 @@ function applyEdits() {
 }
 
 /**
- * Example edit function.
- * Name it after the human description of the change.
- * Always idempotent, always fail loudly, always escape anchors.
+ * Showcased insert: add a paragraph after a unique section heading.
+ * Repeat-run: skip when "Welcome to the new section" is already present.
  */
 function edit_AddIntroParagraph(body) {
   const EDIT_NAME = 'AddIntroParagraph';
 
-  // 1. Check if the desired end state already exists (idempotency)
+  // 1. Check if the desired end state already exists (repeat-run for this insert)
   if (body.findText(escapeRegExp('Welcome to the new section'))) {
     Logger.log(`✓ SKIPPED (already present): ${EDIT_NAME}`);
     return false;
   }
 
-  // 2. Locate a robust anchor (primary + optional secondary).
-  //    Always route anchor literals through escapeRegExp — findText treats
-  //    its pattern as a regex, and a stray '(' or '?' silently breaks the match.
-  let range = body.findText(escapeRegExp('Section 2: Overview'));   // primary unique literal
-  if (!range) {
-    range = body.findText(escapeRegExp('Overview of the system'));  // secondary nearby context
-  }
-
-  if (!range) {
-    Logger.log(`✗ SKIPPED: ${EDIT_NAME} — anchor not found`);
+  // 2. Locate a unique anchor (primary, then nearby backup if the primary is missing).
+  const found = findUniqueText(body, 'Section 2: Overview', 'Overview of the system');
+  if (found.skipReason) {
+    Logger.log(`✗ SKIPPED: ${EDIT_NAME} — ${found.skipReason}`);
     return false;
   }
 
@@ -67,7 +66,7 @@ function edit_AddIntroParagraph(body) {
   }
 
   // 4. Perform the edit
-  const element = range.getElement();
+  const element = found.range.getElement();
   const parent = element.getParent();
   const idx = body.getChildIndex(parent);
 
@@ -78,6 +77,43 @@ function edit_AddIntroParagraph(body) {
 
   Logger.log(`✓ APPLIED: ${EDIT_NAME}`);
   return true;
+}
+
+/**
+ * Find a unique literal. If `primary` is missing, try `secondary`.
+ * Ambiguous (more than one match) is a skip, not a first-match guess.
+ */
+function findUniqueText(body, primary, secondary) {
+  const primaryResult = uniqueFindText(body, primary);
+  if (primaryResult.status === 'unique') {
+    return { range: primaryResult.range };
+  }
+  if (primaryResult.status === 'ambiguous') {
+    return { skipReason: 'anchor is ambiguous' };
+  }
+  if (secondary) {
+    const secondaryResult = uniqueFindText(body, secondary);
+    if (secondaryResult.status === 'unique') {
+      return { range: secondaryResult.range };
+    }
+    if (secondaryResult.status === 'ambiguous') {
+      return { skipReason: 'anchor is ambiguous' };
+    }
+  }
+  return { skipReason: 'anchor not found' };
+}
+
+function uniqueFindText(body, literal) {
+  const escaped = escapeRegExp(literal);
+  const first = body.findText(escaped);
+  if (!first) {
+    return { status: 'missing' };
+  }
+  const second = body.findText(escaped, first);
+  if (second) {
+    return { status: 'ambiguous' };
+  }
+  return { status: 'unique', range: first };
 }
 
 /**

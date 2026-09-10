@@ -19,9 +19,9 @@ Point at `smellcheck` `rules/core.md`. Do not fork it.
 ## Protected lines
 
 - Treat the document you already have.
-- Insert precise edits without changing the theme, format, comments, or history.
+- Make targeted edits in an existing Google Doc, Sheet, or Slides file using a reviewable Apps Script.
 
-Do not clever-synonym those.
+Do not clever-synonym those. Do not restore the old unconditional promise that every edit leaves theme, format, comments, and history unchanged.
 
 ## House extras
 

@@ -3,7 +3,7 @@
 	"version": "0.1.7",
 	"private": false,
 	"type": "module",
-	"description": "Insert precise edits without changing the theme, format, comments, or history.",
+	"description": "Targeted, reviewable Apps Script edits in an existing Google Doc, Sheet, or Slides file.",
 	"license": "MIT",
 	"author": "Catalyst Forge LLC",
 	"keywords": [

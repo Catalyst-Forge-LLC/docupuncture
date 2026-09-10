@@ -1,9 +1,18 @@
 /**
  * DocuPuncture for Slides – sample skeleton
  *
+ * Protocol for this sample:
+ * - DRY_RUN = true locates anchors and logs. It must not mutate.
+ * - A missing or ambiguous single-shape anchor is logged and skipped.
+ *   Do not guess a slide index or object ID.
+ * - Repeat-run for edit_UpdateTitleOnSlide1: skip when the shape already
+ *   has the new title. That skip is for this title update, not every script.
+ * - replaceAllText is a different operation. Multiple matches are intended.
+ *   Do not call it during a dry run. Count matches by hand instead.
+ *
  * Paste into the target presentation's Extensions → Apps Script, then run
- * applyEdits. With DRY_RUN = true it only logs what it WOULD change;
- * read the log, set DRY_RUN = false, and run again to apply.
+ * applyEdits. With DRY_RUN = true it only logs what it WOULD change.
+ * Read the log, set DRY_RUN = false, and run again to apply.
  */
 
 const DRY_RUN = true; // ← set to false to actually apply the edits
@@ -23,7 +32,8 @@ function applyEdits() {
 }
 
 /**
- * Example: find a shape containing specific text and update it.
+ * Showcased title update: one unique shape, then set its text.
+ * Repeat-run: skip when the shape already says New Title Text.
  *
  * Styling note: getText().setText() flattens mixed character styling
  * (e.g. one bolded word) to a single run. It is safe here only because
@@ -36,21 +46,25 @@ function edit_UpdateTitleOnSlide1(slides) {
   const targetSlide = slides[0]; // or find by content
 
   const shapes = targetSlide.getShapes();
-  let targetShape = null;
+  const matches = [];
 
   for (let i = 0; i < shapes.length; i++) {
     const text = shapes[i].getText().asString().trim();
     if (text.indexOf('Old Title Text') !== -1) {
-      targetShape = shapes[i];
-      break;
+      matches.push(shapes[i]);
     }
   }
 
-  if (!targetShape) {
+  if (matches.length === 0) {
     Logger.log(`✗ SKIPPED: ${EDIT_NAME} — anchor not found`);
     return false;
   }
+  if (matches.length > 1) {
+    Logger.log(`✗ SKIPPED: ${EDIT_NAME} — anchor is ambiguous`);
+    return false;
+  }
 
+  const targetShape = matches[0];
   const current = targetShape.getText().asString().trim();
   if (current === 'New Title Text') {
     Logger.log(`✓ SKIPPED (already present): ${EDIT_NAME}`);
@@ -72,7 +86,8 @@ function edit_UpdateTitleOnSlide1(slides) {
  * replaceAllText preserves each match's run styling, so it is the
  * preferred tool for text swaps inside shapes with mixed styling.
  *
- * Note: replaceAllText has no read-only mode, so in a dry run we count
+ * Multiple matches are the operation here, not an ambiguity.
+ * replaceAllText has no read-only mode, so in a dry run we count
  * matches manually instead of calling it.
  */
 function edit_ReplacePlaceholderAcrossDeck(presentation) {

@@ -6,9 +6,9 @@ const npm = 'https://www.npmjs.com/package/docupuncture';
 export default defineFilepressConfig({
 	title: 'DocuPuncture',
 	description:
-		'Insert precise edits without changing the theme, format, comments, or history.',
+		'Targeted, reviewable Apps Script edits in an existing Google Doc, Sheet, or Slides file.',
 	tagline: 'Treat the document you already have.',
-	lede: 'Insert precise edits without changing the theme, format, comments, or history.',
+	lede: 'Make targeted edits in an existing Google Doc, Sheet, or Slides file using a reviewable Apps Script.',
 	url: 'https://docupuncture.dev',
 	author: 'Catalyst Forge LLC',
 	logo: '/logo.png',

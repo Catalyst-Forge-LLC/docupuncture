@@ -1,12 +1,12 @@
 ---
 title: Treat the document you already have.
-description: Insert precise edits without changing the theme, format, comments, or history.
+description: Targeted Apps Script edits in an existing Google Doc, Sheet, or Slides file.
 order: 0
 ---
 
-You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, format, comments, and history are gone.
+You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, format, comments, and the existing revision thread are gone.
 
-DocuPuncture writes a small Apps Script you paste into Extensions → Apps Script and run on the live file.
+DocuPuncture writes a small Apps Script you paste into Extensions → Apps Script and run on the live file. It starts with a dry run and is designed to preserve surrounding structure for supported edit types.
 
 <div class="cta-row">
   <a class="cta cta-primary" href="/install">Get the skills</a>
@@ -21,20 +21,23 @@ DocuPuncture writes a small Apps Script you paste into Extensions → Apps Scrip
 
 ## How a run works
 
-1. Tell the agent what to change in an existing Doc, Sheet, or Slides file.
-2. It reads the live file and writes an Apps Script.
-3. You open the file → Extensions → Apps Script → paste → run `applyEdits`.
-4. First run is a dry run. Read the log, set `DRY_RUN = false`, run again.
+1. Point the agent at an existing Doc, Sheet, or Slides file (URL or ID) and the intended changes.
+2. Give it exact current text for anchors. If your host already has a Drive connector, it can read the file. The skill does not grant Google access by itself.
+3. Review the Apps Script it writes.
+4. Open the file, go to Extensions → Apps Script, paste, and run `applyEdits`.
+5. First run is a dry run. Read the log, set `DRY_RUN = false`, then run again.
 
-The script runs as you, on your file. Missing anchors are logged and skipped. Re-running does not duplicate work.
+The script runs as you, on your file. Missing or ambiguous anchors are logged and skipped. For the showcased insert and update operations, a repeat run skips work that is already there.
 
-## Docs, Sheets, Slides
+## Supported edits
 
-| Skill | Surface | Fit |
+Preservation is a design goal for the operations below. An edit adds a revision. The existing file stays the same artifact. Formatting and comment anchors are not guaranteed on every edit.
+
+| Surface | Supported edits | Watch |
 | --- | --- | --- |
-| [Docs](/docs) | Google Docs | Comments, tabs, lists, partial styling. |
-| [Sheets](/sheets) | Google Sheets | Grid and ranges. Notes and validation stay. |
-| [Slides](/slides) | Google Slides | Text and content. Layout surgery is higher risk. |
+| [Docs](/docs) | Text swap, insert or delete at a unique anchor, and partial span styling | Comment anchors on replaced or deleted text can orphan. Tabs cannot be deleted by script. |
+| [Sheets](/sheets) | Cell or range value update at a unique finder, or a header plus offset | Structural row changes can break dependent formulas. Notes and validation stay on cells you do not rewrite. |
+| [Slides](/slides) | Text on existing shapes, using `replaceAllText` or a targeted text range | `setText` flattens mixed character styling. Moving or resizing many objects is layout surgery. |
 
 [Install](/install) · [Skills](/skills) · [GitHub](https://github.com/Catalyst-Forge-LLC/docupuncture)
 

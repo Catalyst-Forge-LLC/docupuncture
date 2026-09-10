@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+Bound preservation claims to supported Docs, Sheets, and Slides operations. An edit adds a revision and does not keep history unchanged. Dry-run stays non-mutating. Missing or ambiguous targeted anchors are reported, not guessed. Repeat-run skip is documented for the showcased insert and update samples. First-use copy states that the skill does not grant Google access, the script runs as the user, and writes stay off until the dry-run log is reviewed.
+
 ## 0.1.1
 
 Public URL is docupuncture.dev. Origin post says ForgeTrail, not ForgeKit.
