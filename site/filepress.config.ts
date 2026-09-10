@@ -11,8 +11,8 @@ export default defineFilepressConfig({
 	lede: 'Insert precise edits without changing the theme, format, comments, or history.',
 	url: 'https://docupuncture.dev',
 	author: 'Catalyst Forge LLC',
-	logo: '/logo.svg',
-	ogImage: '/logo.svg',
+	logo: '/logo.png',
+	ogImage: '/logo.png',
 	homePage: 'home',
 	nav: [
 		{ label: 'Home', href: '/' },
