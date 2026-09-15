@@ -13,4 +13,4 @@ When an AI regenerates a Google Doc, Sheet, or deck, the theme, format, comments
 
 Make targeted edits in an existing Google Doc, Sheet, or Slides file using a reviewable Apps Script.
 
-[Get the skills](/install)
+[Install in your agent](/install)

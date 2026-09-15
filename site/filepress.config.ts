@@ -17,12 +17,14 @@ export default defineFilepressConfig({
 	nav: [
 		{ label: 'Home', href: '/' },
 		{ label: 'Skills', href: '/skills' },
-		{ label: 'Install', href: '/install' },
-		{ label: 'Posts', href: '/writing' },
+		{ label: 'Get started', href: '/install' },
+		{ label: 'Posts', href: '/posts' },
 		{ label: 'GitHub', href: github, icon: 'github' }
 	],
 	footerLinks: [
 		{ label: 'RSS', href: '/rss.xml' },
+		{ label: 'Get started', href: '/install' },
+		{ label: 'Posts', href: '/posts' },
 		{ label: 'npm', href: npm },
 		{ label: 'GitHub', href: github, icon: 'github' },
 		{ label: 'AppFacts', href: 'https://appfacts.dev/v#af1.eNpVkUFLAzEQhf_K8s5pi9dcC4JSvdibiKTZaRrNzoRkUllK_7ukVam3YeZ98yYvJxxh7wzYTQSLUXzLjb22QjDQOffuJCyFssCgqtNWYeG8xmPXpOiJa5c9PWyvCv8Je0JyHJoLffLoju7Fl5jVDNs507WGQWms8eL8LCMtPyoMDlI1coDFOkkb98kVwtlgpFxhX09gWATSfUyUC9XOZFjsSf1hKDSJ0tCHgxdWYsXZXKGv4jgkKj_ASDnJPBHroCJp2EsZ_I3lm0E9-j_Lm2sMCuzvoReuB9c3OY3CQ4165XctprGHkZ3_dIHeJ8cuUKcz5wkGPsKChS9P7CHXqFLmvl41V7tahaiHtlt6mVZrpy7NVRf3UgItNpv16t-Pnb8BxMCe5g' },

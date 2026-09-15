@@ -9,7 +9,7 @@ You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a ne
 DocuPuncture writes a small Apps Script you paste into Extensions → Apps Script and run on the live file. It starts with a dry run and is designed to preserve surrounding structure for supported edit types.
 
 <div class="cta-row">
-  <a class="cta cta-primary" href="/install">Get the skills</a>
+  <a class="cta cta-primary" href="/install">Install in your agent</a>
   <a class="cta cta-secondary" href="/skills">How it works</a>
 </div>
 
@@ -39,7 +39,7 @@ Preservation is a design goal for the operations below. An edit adds a revision.
 | [Sheets](/sheets) | Cell or range value update at a unique finder, or a header plus offset | Structural row changes can break dependent formulas. Notes and validation stay on cells you do not rewrite. |
 | [Slides](/slides) | Text on existing shapes, using `replaceAllText` or a targeted text range | `setText` flattens mixed character styling. Moving or resizing many objects is layout surgery. |
 
-[Install](/install) · [Skills](/skills) · [GitHub](https://github.com/Catalyst-Forge-LLC/docupuncture)
+[Install in your agent](/install) · [Skills](/skills) · [Posts](/posts) · [GitHub](https://github.com/Catalyst-Forge-LLC/docupuncture)
 
 On the [Catalyst Forge](https://www.catalystforge.com/open-source) shelf next to [TemperPass](https://temperpass.dev): a rule set you point an agent at.
 

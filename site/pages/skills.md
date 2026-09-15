@@ -40,4 +40,4 @@ The [home page](/) has the supported-edit matrix. Do not treat every generated s
 - More than that, or the file is still being edited: warn about drifting anchors, or split the work.
 - Large restructuring: several smaller scripts, or regenerate the file.
 
-[Install](/install)
+[Install in your agent](/install)

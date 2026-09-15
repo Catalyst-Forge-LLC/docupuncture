@@ -4,11 +4,13 @@ Treat the document you already have.
 
 Make targeted edits in an existing Google Doc, Sheet, or Slides file using a reviewable Apps Script. DocuPuncture starts with a dry run and is designed to preserve surrounding structure for supported edit types.
 
-When an AI regenerates a Google Doc, Sheet, or deck, theme, format, comments, and the existing revision thread usually go with it. DocuPuncture writes a small Apps Script you paste and run on the live file.
+## Install in your agent
 
-## The skills
+1. Choose a surface: Docs, Sheets, or Slides.
+2. Download the matching zip from [docupuncture.dev/install](https://docupuncture.dev/install).
+3. Put the folder where your agent reads skills, then ask for a fictional dry-run script with `DRY_RUN = true`.
 
-Copy a folder into Cursor, Claude Code, or anything else that reads `SKILL.md`. When someone asks for edits to an existing Workspace file, the agent writes a script instead of a new document.
+Full host routes: [docupuncture.dev/install](https://docupuncture.dev/install).
 
 | Skill | Surface | Fit |
 | --- | --- | --- |
@@ -16,7 +18,9 @@ Copy a folder into Cursor, Claude Code, or anything else that reads `SKILL.md`. 
 | [`docupuncture-sheets`](skills/docupuncture-sheets/SKILL.md) | Google Sheets | Grid and ranges. Notes and validation stay on cells you do not rewrite. |
 | [`docupuncture-slides`](skills/docupuncture-slides/SKILL.md) | Google Slides | Text and content. Layout surgery is higher risk. |
 
-## Install
+The skill does not grant Google access. Chat returns the script. The live file changes only when you paste it into Extensions → Apps Script and run it.
+
+## Other installation methods
 
 ```bash
 pnpm add docupuncture
@@ -29,7 +33,7 @@ git clone https://github.com/Catalyst-Forge-LLC/docupuncture.git
 # then copy skills/docupuncture-docs/  (or -sheets / -slides)
 ```
 
-Site: [docupuncture.dev](https://docupuncture.dev)
+Site: [docupuncture.dev](https://docupuncture.dev) · [Posts](https://docupuncture.dev/posts)
 
 ## How a run works
 
