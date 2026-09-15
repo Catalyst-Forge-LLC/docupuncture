@@ -11,7 +11,7 @@ pnpm build    # → build/
 
 From the package root: `pnpm site:dev`, `pnpm site:build`, `pnpm ship`.
 
-If [LocalBerth](https://www.npmjs.com/package/localberth) is installed, this site stays on **5188** as `docupuncture-site`.
+If [LocalSlip](https://www.npmjs.com/package/localslip) is installed, this site stays on **5188** as `docupuncture-site`.
 
 ## Deploy (Cloudflare Pages)
 
