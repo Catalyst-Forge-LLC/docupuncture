@@ -2,7 +2,7 @@
 
 Treat the document you already have.
 
-Make targeted edits in an existing Google Doc, Sheet, or Slides file using a reviewable Apps Script. DocuPuncture starts with a dry run and is designed to preserve surrounding structure for supported edit types.
+DocuPuncture prepares an Apps Script that makes targeted changes to a Google Doc, Sheet, or Slides file you already have. You review the script and run it yourself. The first run is a dry run that only logs. The script is designed to preserve surrounding structure for supported edit types.
 
 ## Install in your agent
 

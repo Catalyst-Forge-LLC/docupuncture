@@ -4,9 +4,9 @@ description: Targeted Apps Script edits in an existing Google Doc, Sheet, or Sli
 order: 0
 ---
 
-You ask an AI to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, format, comments, and the existing revision thread are gone.
+You ask an agent to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, format, comments, and the existing revision thread are gone.
 
-DocuPuncture writes a small Apps Script you paste into Extensions → Apps Script and run on the live file. It starts with a dry run and is designed to preserve surrounding structure for supported edit types.
+DocuPuncture prepares a small Apps Script that makes targeted changes to the file you already have. You review the script, paste it into Extensions → Apps Script, and run it yourself. The first run is a dry run that only logs. The script is designed to preserve surrounding structure for supported edit types.
 
 <div class="cta-row">
   <a class="cta cta-primary" href="/install">Install in your agent</a>
