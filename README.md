@@ -67,3 +67,5 @@ Closest cousin on the shelf is [TemperPass](https://temperpass.dev): a rule set 
 ## License
 
 MIT. Built by [Catalyst Forge LLC](https://www.catalystforge.com).
+
+[See the rest of the Catalyst Forge shelf.](https://catalystforge.com/tools/)
