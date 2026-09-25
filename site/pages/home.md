@@ -1,5 +1,5 @@
 ---
-title: Targeted changes in the file you already have.
+title: Prepare targeted edits to an existing Google Doc, Sheet, or presentation.
 description: Targeted Apps Script edits in an existing Google Doc, Sheet, or Slides file.
 order: 0
 ---
