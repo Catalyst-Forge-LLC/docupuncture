@@ -27,7 +27,7 @@ DocuPuncture prepares a small Apps Script that makes targeted changes to the fil
 4. Open the file, go to Extensions → Apps Script, paste, and run `applyEdits`.
 5. First run is a dry run. Read the log, set `DRY_RUN = false`, then run again.
 
-The script runs as you, on your file. Missing or ambiguous anchors are logged and skipped. For the showcased insert and update operations, a repeat run skips work that is already there.
+Before running the generated script, confirm that it starts with `DRY_RUN = true`, uses the intended active file, logs missing or ambiguous anchors, and reports applied and skipped edits. Check repeat-run behavior for the specific operation. The script running as you, on your file, is the design. Generated output is not guaranteed to do all of that until you read it. Missing or ambiguous anchors are meant to be logged and skipped. For the showcased insert and update operations, a repeat run is meant to skip work that is already there.
 
 ## Supported edits
 
