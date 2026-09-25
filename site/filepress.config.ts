@@ -8,7 +8,7 @@ export default defineFilepressConfig({
 	description:
 		'Targeted, reviewable Apps Script edits in an existing Google Doc, Sheet, or Slides file.',
 	tagline: 'Treat the document you already have.',
-	lede: 'Prepare an Apps Script that makes targeted changes to an existing Google Doc, Sheet, or Slides file. You review it and run it.',
+	lede: 'Doc · Sheet · Slides',
 	url: 'https://docupuncture.dev',
 	author: 'Catalyst Forge LLC',
 	logo: '/logo.png',
