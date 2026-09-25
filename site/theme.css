@@ -221,6 +221,8 @@ main.wrap {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: transparent;
+	box-shadow: none;
 }
 
 .home-page,
@@ -228,6 +230,8 @@ main.wrap {
 main.wrap > article {
 	width: min(var(--measure), 100%);
 	max-width: var(--measure);
+	background: transparent;
+	box-shadow: none;
 	padding-top: clamp(1.5rem, 5vw, 3rem);
 	padding-bottom: clamp(2rem, 6vw, 3.5rem);
 }
