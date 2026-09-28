@@ -13,4 +13,4 @@ Base the message on **what is actually staged** (`git diff --staged`). Do not in
 2. **Blank line.**
 3. **Body:** what changed and why, honest to the staged diff. Skip for a one-line typo.
 
-No attribution trailers (`Co-Authored-By`, `Made-with`, etc.) unless the user asks. Use `git commit -m` or `git commit -F`.
+Use `git commit -m` or `git commit -F`.
