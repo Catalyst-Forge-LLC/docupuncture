@@ -1,6 +1,6 @@
 ---
 app_facts_version: 0.1.0
-name: docupuncture
+name: DocuPuncture
 type: monorepo
 status: active
 license: MIT
@@ -28,7 +28,7 @@ generated:
   inputs_fingerprint: fb72ed498e90312b
 ---
 
-# docupuncture
+# DocuPuncture
 
 `monorepo` · **active** · MIT
 
@@ -63,4 +63,4 @@ Curated stack label for this repository — aimed at an under-a-minute skim.
 ---
 *Generated with [AppFacts](https://appfacts.dev) · Scan `APP_FACTS.png` or open the [visual label][appfacts-label]*
 
-[appfacts-label]: https://appfacts.dev/v#af1.eNpVkcFuHCEQRH9lVGe8q1y5rmQpkZOLfbOsCEMvQ8x0I2gmGq323y12kmhzQ3S9rqK4YIX9YsBuIVgE8b109torwUC3Mm4XYalUBAZNnfYGC-c1rUOTkyduQ_b968uu8B-wF2THsbs4Jt_c6p59TUXN9LIV2s8wqJ013Zx_SKDDrwaDWZomjrA4ZenhnF0lXA0ClQb7egHDIpKeU6ZSqQ2mwOJM6uep0iJK0xhOXliJFVezQ7-r45ip_gEClSzbQqyTiuTpLHXyd5ZvBm31_yzv0hhU2L9Bb9wobmxymoSnlnTn33vKYZRRnP9wkX4ujl2kQRcuy6iYmsKic0jNZ2kUYOATLFj49u5ZFip7j7NqafZ4vP-mQ6B1BKIiLanU7U4Xk879_eBlOZ6curw1fXiUGunh6en03xZcPwGnVrO-
+[appfacts-label]: https://appfacts.dev/v#af1.eNpVkUGLHCEQhf9K887uDLl6nRBI2IRA9rYswdUa26xdJVp2aIb578HpTZjcxHpfvefzghX2gwG7hWDxUXz_3tlrrwQD3cq4XYSlUhEYNHXaGyyc17QOTU6euA3Z189Pu8K_wV6QHcfu4ph8cav74WsqaqanrdB-hkHtrOnm_E0CHX41GMzSNHGExSlLD-fsKuFqEKg02OcLGBaR9JwylUptMAUWZ1I_T5UWUZrGcPLCSqy4mh36XR3HTPUdCFSybAuxTiqSp7PUyd9Zvhi01f-zvEtjUGH_Br1xQXwfm5wm4akl3fnXnnIYZRTn31ykn4tjF2nQhcsyKqamsOgcUvNZGgUY-AQLFr69e5aFyt7jrFqaPR6HW3n_pkOgdQSiIi2p1O1OF5PO_fXgZTmenLq8NX34JDXSw-Pj6b8tuP4BKRazfg

@@ -1,6 +1,6 @@
 ---
 skill_facts_version: "0.1.0"
-name: docupuncture-slides
+name: DocuPuncture Slides
 developer: Catalyst Forge
 version: "0.1.1"
 status: active
@@ -31,7 +31,7 @@ credits:
   built_by: "Catalyst Forge - https://www.catalystforge.com/"
 ---
 
-# Skill Facts - docupuncture-slides
+# Skill Facts - DocuPuncture Slides
 
 | | |
 |---|---|
@@ -80,4 +80,4 @@ Precise in-place edits to an existing Google Slides deck via paste-and-run Apps 
 ---
 *Generated with [SkillFacts](https://skillfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/)*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdkjFvGzEMhf-KoNlnxx29BS7aJQECZAwCQ5boO8I6SiCpa4Ig_73UoUE9dOomPFHkex_14Rd_2G88hRn8wacSW20UtTEMkjGB-I1PsEAuFdgqjkFDfhd1PwqPYJcLsGAhu7rb7rd7U0SDNjEhRMWl12SMQNIH3NcQJxi-be9MviIl02JjKTzIFXM2tTauZS1-Yogo4JCGmkMEBwlVnBYXyMEbiiKN7mcpYwb3vLp1CeLVLRhcDaIwBEoDN3L3tYp7joxV-wguC1CgaFM-vJTG_eQn1SqH3W5Endp5G8u8-4o7rHGHh4fj7pbRavecUaZ_wfnceCRRbsahkJwYLPw6cQKLevBUqLcg0F-FrybgXDNCMu2CGcRawfxVZ920lNzbXIDBzBu8F_8n_nc21O7x-ORsSjr156dYSIHUv278uVHKkE6BFS-2F1vPi8kwMoh0SwoZZlB-_2vLcBrgsHrv5WZgKjPUMN7CusWxtZ9iDxlsgahlbfZfUI0ZxaA9oR3h8zfqbO4s
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdkD1rIzEQhv-KmFprx1eqCw53TQ4MKUMwsjTeHayVxMxoExP83w8tMZfiquumeOf9eD5hAbezkP2M4OCphHZoOWhjNC-JIgpYiLhgKhUZHOy9-nQVNT8LjwgWFmShksHBw2a32YEFUa9NwIEPSkvXJAqYpQc8Vh8mHH5sHsDChXIEB6GxFB7kQimBhdq4llV8YAwkaCgPNfmABiOpGC3GZ4MfJEp5NL9KGdO9rYkYLmYhb6oXxcHnOHDL5rFWMS-BqWqP4LJg9jkguE-Q0rhfMKlWcdvtSDq10yaUeXufO6xzh-fn_TaW0OoXo7XuKZFM_4Jzs0BZlFtQKlmOjD5Ma-KEKYGDXHK3yKjvhS_ggOaaCCNYOFNCuYrifNfdLGgpqduckTEHjOBe4Wv-E9OC5vf-YBh9PPb3YyhZMSu8WTi1HBPGo2elsw8q4F7fLODIKNIrKSacUfn6t1bEDtiv3bv8ZmEqM1Y_fof1Hccm4gIWGGsR0rKa_RdU5ZaD175QueHtD9Jh7b8

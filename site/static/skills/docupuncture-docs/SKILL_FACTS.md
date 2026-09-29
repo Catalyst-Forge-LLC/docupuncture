@@ -1,6 +1,6 @@
 ---
 skill_facts_version: "0.1.0"
-name: docupuncture-docs
+name: DocuPuncture Docs
 developer: Catalyst Forge
 version: "0.1.1"
 status: active
@@ -31,7 +31,7 @@ credits:
   built_by: "Catalyst Forge - https://www.catalystforge.com/"
 ---
 
-# Skill Facts - docupuncture-docs
+# Skill Facts - DocuPuncture Docs
 
 | | |
 |---|---|
@@ -80,4 +80,4 @@ Precise in-place edits to an existing Google Doc via paste-and-run Apps Script
 ---
 *Generated with [SkillFacts](https://skillfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/)*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdUrFuGzEM_RVBs8-OO3oLXLRLAgToGASGLNF3gnWkQFKXBkH-vdQBRj106iY9Uo_vPerTL_6w33gMM_iDTxRbbRi1MQx2Eb_xCRYoVIGtfgwayoeo-0E8ghUXYMmEVnrY7rd7Q0SDNjEgRM1L7yk5Akqnf6whTjB82z4YfM2YDIuNhXiQay7F0Nq40tr8whCzgMs41BIiOEhZxSm5gA5-Z9GMo_tJNBZw3ym6JQdXgygMAdPADd1jreJ-Rc5VOzXTAhgwGvunF2rcT35SrXLY7casUztvI827m81htTk8PR1398msMs8ly_SvUL42PqMoN_NPKCcGM71OnMAsHjwSdgoEfSe-GpDnWjIkwy65gBgVzLc-Y1Oi0mkuwGDiLbRXf7PNFrF7Pr44m5JO_fkpEiqg-reNPzdMBdIpsOaL7cPW8mowjAwiXZJCgRmUP_7KStCDDav23m4CJpqhhvE-rPs4tvZD7CGDLS4rrWT_FaplhjFod2hH-PoDAGXqTA
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqdkDGLGzEQhf-KmFq7PqdUd_hImgsYUh6HkaXxrrBWI2ZGm5jD_z1oickVqdKpePrmve8DVnB7C8UvCA5eKLRjK0Ebo3mhIGAh4oqZKjI4OHj1-SZqvhJPCBZWZElUwMHTuB_3YEHUaxNw4IOmtWdyClik45-rDzMOX8YnsHBNJYKD0FiIB7mmnMFCbVxpCx8ZQxI0qQw1-4AGY1IxSsYXg7-SaCqT-UY05a2rWZM31Yvi4EscuBXzXKuYH4FT1Y5mWrH4EhDcBwg17i-YVau43W5KOrfzGGjZPWYO28zh9fWwixRa_WNmq3nOSeZ_SblbSEWUW9BERU6MPszbxRlzBgeFSkcU1J_EV3CQlpoTRrBwSRnlJorLI3e3oES5Yy7IWAJGcG_wmM1pRfP9cDSMPp7691OgolgU3i2cW4kZ48mzposPKuDe3i3gxCjSKylmXFD59rdWxC7Wb917_G5hpgWrnz7L-qxjjLiCBcZKkpQ22H9JVW4leO0LlRvefwPsjenf
