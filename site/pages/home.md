@@ -1,17 +1,10 @@
 ---
-title: Prepare targeted edits to an existing Google Doc, Sheet, or presentation.
-description: Targeted Apps Script edits in an existing Google Doc, Sheet, or Slides file.
+title: "Change the document you already have."
+description: "Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for that existing file, so a small change does not require rebuilding the whole document."
 order: 0
 ---
 
-You ask an agent to tweak a formatted Google Doc, Sheet, or deck. It hands you a new file. Theme, format, comments, and the existing revision thread are gone.
-
-DocuPuncture prepares a small Apps Script that makes targeted changes to the file you already have. You review the script, paste it into Extensions → Apps Script, and run it yourself. The first run is a dry run that only logs. The script is designed to preserve surrounding structure for supported edit types.
-
-<div class="cta-row">
-  <a class="cta cta-primary" href="/install">Install in your agent</a>
-  <a class="cta cta-secondary" href="/skills">How it works</a>
-</div>
+<section class="value-hero" aria-label="DocuPuncture overview"><div class="value-intro"><p class="value-kind">Agent skill for targeted Google Workspace edits</p><h1>Change the document you already have.</h1><p class="value-lede">Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for that existing file, so a small change does not require rebuilding the whole document.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install DocuPuncture</a><a class="cta cta-secondary" href="#how-a-run-works">See the edit workflow</a></div><p class="value-limit">You review and run the script in Apps Script. Start with a dry run. The skill does not grant Google access, and preservation depends on the operation.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>A formatted proposal needs one sentence changed at a unique text anchor.</p><div class="value-result"><p><strong>What you get</strong><br>A small script targeting that anchor in the existing document.</p></div><p>Review the dry-run log, then apply the intended edit in the same file.</p><p class="value-note">Illustrative supported edit. Missing or ambiguous anchors should be skipped.</p></figure></section>
 
 ## What you lose when the file is regenerated
 
