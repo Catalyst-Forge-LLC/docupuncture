@@ -4,7 +4,27 @@ description: "Ask for a specific edit to a Google Doc, Sheet, or Slides file. Do
 order: 0
 ---
 
-<section class="value-hero" aria-label="DocuPuncture overview"><div class="value-intro"><p class="value-kind">Agent skill for targeted Google Workspace edits</p><h1>Change the document you already have.</h1><p class="value-lede">Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for that existing file, so a small change does not require rebuilding the whole document.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install DocuPuncture</a><a class="cta cta-secondary" href="#how-a-run-works">See the edit workflow</a></div><p class="value-limit">You review and run the script in Apps Script. Start with a dry run. The skill does not grant Google access, and preservation depends on the operation.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>A formatted proposal needs one sentence changed at a unique text anchor.</p><div class="value-result"><p><strong>What you get</strong><br>A small script targeting that anchor in the existing document.</p></div><p>Review the dry-run log, then apply the intended edit in the same file.</p><p class="value-note">Illustrative supported edit. Missing or ambiguous anchors should be skipped.</p></figure></section>
+<section class="value-hero" aria-label="DocuPuncture overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Agent skill for targeted Google Workspace edits</p><h1>Change the document you already have.</h1></div><div class="value-pitch"><p class="value-lede">Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for that existing file, so a small change does not require rebuilding the whole document.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install DocuPuncture</a><a class="cta cta-secondary" href="#sentence-example">See the exact sentence change</a></div><p class="value-limit">You review and run the script in Apps Script. Start with a dry run. The skill does not grant Google access, and preservation depends on the operation.</p></div></div>
+<figure class="value-proof worked-example" id="sentence-example" tabindex="-1">
+<figcaption>Move a pilot date without rebuilding the proposal</figcaption>
+<p class="example-context">Illustrative Google Docs edit. You provide the existing text and requested change; the agent prepares a script for the same document.</p>
+<section class="example-step" aria-labelledby="example-step-1">
+<h2 id="example-step-1"><span>1 · Existing proposal</span> One date needs to change</h2>
+<blockquote><p><strong>Pilot schedule</strong><br>Pilot begins on 4 May.<br>The review meeting stays on 18 May.</p></blockquote><p>The request is to move the pilot start to 11 May. The surrounding proposal stays in place.</p>
+</section>
+<section class="example-step example-report" aria-labelledby="example-step-2">
+<h2 id="example-step-2"><span>2 · Script to review</span> Target that sentence and dry-run first</h2>
+<p>Excerpt of the generated Apps Script settings:</p><pre><code>const DRY_RUN = true;
+const before = "Pilot begins on 4 May.";
+const after = "Pilot begins on 11 May.";</code></pre><p>The script must find that text exactly once. The dry run reports the planned replacement; a missing or repeated anchor is skipped.</p>
+</section>
+<section class="example-step" aria-labelledby="example-step-3">
+<h2 id="example-step-3"><span>3 · You apply the edit</span> The existing document gets the new date</h2>
+<p>After reviewing the script and dry-run log, you set <code>DRY_RUN = false</code> and run <code>applyEdits</code>.</p><blockquote><p><strong>Pilot schedule</strong><br>Pilot begins on 11 May.<br>The review meeting stays on 18 May.</p></blockquote><p class="example-payoff">The second sentence and the rest of the proposal are outside this edit.</p>
+</section>
+<p class="value-note">The excerpt is not a complete runnable script. Inspect the full script before use. Formatting and comment anchors on replaced text need checking; preservation is not guaranteed.</p>
+<p class="example-links"><a href="#how-a-run-works">Follow the review and apply workflow</a> · <a href="/docs">See supported Google Docs edits</a></p>
+</figure></section>
 
 ## What you lose when the file is regenerated
 
