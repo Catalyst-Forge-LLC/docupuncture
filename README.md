@@ -4,6 +4,38 @@ Treat the document you already have.
 
 DocuPuncture prepares an Apps Script that makes targeted changes to a Google Doc, Sheet, or Slides file you already have. You review the script and run it yourself. The first run is a dry run that only logs. The script is designed to preserve surrounding structure for supported edit types.
 
+## Change the date in the proposal you already have
+
+Illustrative Google Docs edit. The request is to move the pilot start to 11 May while keeping the review meeting on 18 May.
+
+**Before:**
+
+> **Pilot schedule**
+>
+> Pilot begins on 4 May.
+>
+> The review meeting stays on 18 May.
+
+**The agent prepares a script for you to review.** Its settings include:
+
+```javascript
+const DRY_RUN = true;
+const before = "Pilot begins on 4 May.";
+const after = "Pilot begins on 11 May.";
+```
+
+This excerpt is not a runnable script. Check that the full script finds the sentence exactly once, logs the planned replacement, and skips missing or repeated anchors. After reviewing the script and dry-run log, set `DRY_RUN = false` and run `applyEdits`.
+
+**After you apply it:**
+
+> **Pilot schedule**
+>
+> Pilot begins on 11 May.
+>
+> The review meeting stays on 18 May.
+
+The same document gets the new date; the other sentence is outside this edit. Check formatting and comment anchors on replaced text, since preservation depends on the operation.
+
 ## Install in your agent
 
 1. Choose a surface: Docs, Sheets, or Slides.
