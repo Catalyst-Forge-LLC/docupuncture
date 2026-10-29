@@ -1,10 +1,10 @@
 ---
-title: "Change the document you already have."
-description: "Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for that existing file, so a small change does not require rebuilding the whole document."
+title: "Make targeted edits to the Google files you already have."
+description: "Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for you to review and run against the existing file, preserving surrounding structure where the edit type supports it."
 order: 0
 ---
 
-<section class="value-hero" aria-label="DocuPuncture overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Agent skill for targeted Google Workspace edits</p><h1>Change the document you already have.</h1></div><div class="value-pitch"><p class="value-lede">Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for that existing file, so a small change does not require rebuilding the whole document.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install DocuPuncture</a><a class="cta cta-secondary" href="#sentence-example">See the exact sentence change</a></div><p class="value-limit">You review and run the script in Apps Script. Start with a dry run. The skill does not grant Google access, and preservation depends on the operation.</p></div></div>
+<section class="value-hero" aria-label="DocuPuncture overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Agent skill for targeted Google Workspace edits</p><h1>Make targeted edits to the Google files you already have.</h1></div><div class="value-pitch"><p class="value-lede">Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for you to review and run against the existing file, preserving surrounding structure where the edit type supports it.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install DocuPuncture</a><a class="cta cta-secondary" href="#sentence-example">See the exact sentence change</a></div><p class="value-limit">You review and run the script in Apps Script. Start with a dry run. The skill does not grant Google access, and preservation depends on the operation.</p></div></div>
 <figure class="value-proof worked-example" id="sentence-example" tabindex="-1">
 <figcaption>Move a pilot date without rebuilding the proposal</figcaption>
 <p class="example-context">Illustrative Google Docs edit. You provide the existing text and requested change; the agent prepares a script for the same document.</p>

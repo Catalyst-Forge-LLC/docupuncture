@@ -5,7 +5,7 @@ const npm = 'https://www.npmjs.com/package/docupuncture';
 
 export default defineFilepressConfig({
 	title: 'DocuPuncture',
-	description: "Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for that existing file, so a small change does not require rebuilding the whole document.",
+	description: "Ask for a specific edit to a Google Doc, Sheet, or Slides file. DocuPuncture prepares an Apps Script for you to review and run against the existing file, preserving surrounding structure where the edit type supports it.",
 	tagline: 'Treat the document you already have.',
 	lede: "Agent skill for targeted Google Workspace edits",
 	url: 'https://docupuncture.dev',
